@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Users>
+<User Action="ADD">
+  <UUID>CREATE-UNIQUE_UUID_HERE</UUID>
+  <FirstName>CHOOSE-FIRST_NAME</FirstName>
+  <LastName>CHOOSE-LAST_NAME</LastName>
+  <Email>temp-bootstrap@example.com</Email>
+  <Phone/>
+  <Role>
+    <RoleID></RoleID>
+    <Name>Administrator</Name>
+    <Level>CLIENT</Level>
+    <ClientID>CHOOSE-CLIENT_IDENTIFIER_NUMBER</ClientID>
+    <Client>CHOOSE-UNIQUE_CLIENT_NAME</Client>
+    <GroupOfStatesID/>
+    <GroupOfStates/>
+    <StateID/>
+    <State/>
+    <GroupOfDistrictsID/>
+    <GroupOfDistricts/>
+    <DistrictID/>
+    <District/>
+    <GroupOfInstitutionsID/>
+    <GroupOfInstitutions/>
+    <InstitutionID/>
+    <Institution/>
+  </Role>
+</User>
+</Users>

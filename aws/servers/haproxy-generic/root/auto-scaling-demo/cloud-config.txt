@@ -1,0 +1,51 @@
+#cloud-config
+# Update apt database on first boot
+# (ie run apt-get update)
+#
+# Default: true
+
+# Upgrade the instance on first boot
+# (ie run apt-get upgrade)
+#
+# Default: false
+
+# Install additional packages on first boot
+#
+# Default: none
+#
+# if packages are specified, this apt_update will be set to true
+#
+packages:
+ - git
+ - nginx
+
+# add each entry to ~/.ssh/authorized_keys for the configured user
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDic+RmuDbEdteJG2XcN4Y54DYdkEkjBxOLGivRRgkrRHS68EDw+3TEG09HkeavZrynji08swyIg5hcFZzqeYq936j+Q7RPr4sa4kr0utCe1hHCd0DClkQ5Lq67N2DKv3sOxjsOkjupcGf1ZdqlObsB+7Ng3li5y5LMQ8rWwDPd6aXjszfYCNT3N8Xos83+YvUv+JcD16nKpfMMCQgA57XtA6uJLMGD/zdcZ1BWx8xu7+NaMLRPcj1AS9n5JsXbOamQ6OlFdpWXKYE56uKFXvT1a2ZB6HLXNSevNOGU817SSvUBGXrOLE13DD1l2K8cYLvYqJddxgpJV+WdNPubcC+n kooaba-aws
+
+
+ssh_import_id: [al-maisan]
+
+
+# run commands
+# default: none
+# runcmd contains a list of either lists or a string
+# each item will be executed in order at rc.local like level with
+# output to the console
+# - if the item is a list, the items will be properly executed as if
+#   passed to execve(3) (with the first arg as the command).
+# - if the item is a string, it will be simply written to the file and
+#   will be interpreted by 'sh'
+#
+# Note, that the list has to be proper yaml, so you have to escape
+# any characters yaml would eat (':' can be problematic)
+runcmd:
+ - [ mkdir, -p, /var/srv ]
+ - [ sh, -xc, "cd /var/srv; git clone git://github.com/freizeit/auto-scaling-demo.git" ]
+ - [ cp, -p, /var/srv/auto-scaling-demo/nginx.conf, /etc/nginx ]
+ - [ /etc/init.d/nginx, restart]
+ - [ sh, -xc, "cd /var/srv/auto-scaling-demo; python ./server.py > server.log 2>&1" ]
+
+# timezone: set the timezone for this instance
+# the value of 'timezone' must exist in /usr/share/zoneinfo
+timezone: Europe/Zurich

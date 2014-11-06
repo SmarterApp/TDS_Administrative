@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+  <!-- Default set of monitored resources -->
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+  <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+  <!-- <Manager pathname="" /> -->
+  <!-- Uncomment this to enable Comet connection tacking (provides events
+       on session expiration as well as webapp lifecycle) -->
+  <!-- <Valve className="org.apache.catalina.valves.CometConnectionManagerValve"
+       /> -->
+  <!-- DB Resource for SqlServer DB - used for Proctor app -->
+
+  <Parameter name="logger.debuglevel" value="ERROR" type="java.lang.String"
+             override="false" />
+
+<!-- Permissions app -->
+  <Resource name="jdbc/permissionsdb" auth="Container"
+            type="javax.sql.DataSource" username="DB_username" password="DB_password"
+            driverClassName="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://DB_server:DB_port/DB_schema"
+            validationQuery="select 1" maxActive="5" maxIdle="2" removeAbandoned="true"
+            logAbandoned="true" />
+  <Parameter name="permissions.xml.resource" value="/usr/local/tomcat/resources/permissions/permissions-resource.xml" override="false" />
+  <!-- END Permissions app -->
+
+</Context>			 

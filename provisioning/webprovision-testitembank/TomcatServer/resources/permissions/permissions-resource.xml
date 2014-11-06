@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<permissions>
+    <component name="Test Authoring">
+        <permission name="Author Tests"/>
+        <permission name="Approve Tests"/>
+        <permission name="Release Tests"/>
+    </component>
+    <component name="Item Authoring"/>
+    <component name="Proctor"/>
+    <component name="Reporting"/>
+    <component name="Digital Library"/>
+    <permissionmapping component="Test Authoring" permission="Author Tests" role="Test Author 2"/>
+    <permissionmapping component="Test Authoring" permission="Author Tests" role="Test Author"/>
+    <permissionmapping component="Test Authoring" permission="Author Tests" role="Test Approver"/>
+    <permissionmapping component="Test Authoring" permission="Approve Tests" role="Test Approver"/>
+    <permissionmapping component="Test Authoring" permission="Author Tests" role="Administrator"/>
+    <permissionmapping component="Test Authoring" permission="Approve Tests" role="Administrator"/>
+    <permissionmapping component="Test Authoring" permission="Release Tests" role="Administrator"/>
+    <permissionmapping component="Test Authoring" permission="Release Tests" role="Test Author"/>
+    <role name="Test Author">
+        <allowableentitytype entity="CLIENT"/>
+        <allowableentitytype description="District" entity="dist"/>
+        <allowableentitytype description="Group Of States" entity="GoS"/>
+        <allowableentitytype description="State" entity="state"/>
+        <allowableentitytype description="Group of Districts" entity="God"/>
+        <allowableentitytype description="Group of Institutions" entity="GoI"/>
+    </role>
+    <role name="Item Author">
+        <allowableentitytype description="State" entity="state"/>
+    </role>
+    <role name="Item Approver">
+        <allowableentitytype description="District" entity="dist"/>
+    </role>
+    <role name="sadd">
+        <allowableentitytype description="Group of Institutions" entity="GoI"/>
+    </role>
+</permissions>

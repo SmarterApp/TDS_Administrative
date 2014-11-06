@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration parameters for Proctor (testadmin) application -->
+<Context>
+  <Parameter name="logger.proctorDevLogPath" value="/usr/local/tomcat/logs" override="false" />
+  <Parameter name="logger.debuglevel"        value="DEBUG"                  override="false"/>
+  <Parameter name="TDSSessionDBName"         value="tdscore_dev_session2012_sandbox" />
+  <Parameter name="ItembankDBName"           value="tdscore_dev_itembank2012_sandbox" />
+  <Parameter name="TDSArchiveDBName"         value="tds_archive_" />
+  <Parameter name="TDSConfigsDBName"         value="tdscore_dev_configs2012_sandbox" />
+  <Parameter name="ClientName"               value="Minnesota_PT" />                                                                                                                                                                           <Parameter name="DBJndiName"               value="java:/comp/env/jdbc/sessiondb" />
+</Context>
+

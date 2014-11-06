@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ -d /usr/local/tomcat/logs ] ; then
+/usr/bin/find /usr/local/tomcat/logs/ -type f -mtime +30 -delete 2>/dev/null
+fi
+

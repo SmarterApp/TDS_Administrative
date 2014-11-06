@@ -1,0 +1,18 @@
+#!/bin/bash  
+# description: Tomcat Start Stop Restart  
+# processname: tomcat  
+# chkconfig: 234 20 80 
+source ~/.bashrc
+case $1 in
+start)
+/bin/su tomcat $CATALINA_HOME/bin/startup.sh
+;;
+stop)
+/bin/su tomcat $CATALINA_HOME/bin/shutdown.sh
+;;
+restart)
+/bin/su tomcat $CATALINA_HOME/bin/shutdown.sh
+/bin/su tomcat $CATALINA_HOME/bin/startup.sh
+;;
+esac
+exit 0

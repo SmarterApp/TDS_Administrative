@@ -1,0 +1,1 @@
+0 0 * * * /usr/bin/find /usr/local/tomcat/logs/ -mtime +30 | xargs /bin/rm

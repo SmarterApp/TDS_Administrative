@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Users>
+<User Action="ADD">
+  <UUID>5408d520e4b06af891b6fac4</UUID>
+  <FirstName>Admin</FirstName>
+  <LastName>User</LastName>
+  <Email>art-admin@example.com</Email>
+  <Phone/>
+  <Role>
+    <RoleID>1000</RoleID>
+    <Name>Client Coordinator</Name>
+    <Level>CLIENT</Level>
+    <ClientID>1000</ClientID>
+    <Client>QA Client</Client>
+    <GroupOfStatesID/>
+    <GroupOfStates/>
+    <StateID/>
+    <State/>
+    <GroupOfDistrictsID/>
+    <GroupOfDistricts/>
+    <DistrictID/>
+    <District/>
+    <GroupOfInstitutionsID/>
+    <GroupOfInstitutions/>
+    <InstitutionID/>
+    <Institution/>
+  </Role>
+</User>
+</Users>

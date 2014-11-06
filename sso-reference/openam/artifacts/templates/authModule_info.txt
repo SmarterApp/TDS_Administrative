@@ -1,0 +1,18 @@
+iplanet-am-auth-ldap-ssl-enabled=false
+iplanet-am-auth-ldap-return-user-dn=true
+iplanet-am-auth-ldap-base-dn=ou=people,dc=smarterbalanced,dc=org
+iplanet-am-ldap-user-creation-attr-list=
+iplanet-am-auth-ldap-server=${LDAPFQDN}:1389
+iplanet-am-auth-ldap-invalid-chars=*|(|)|&|!
+iplanet-am-auth-ldap-user-naming-attribute=sbacUUID
+iplanet-am-auth-ldap-auth-level=0
+iplanet-am-auth-ldap-bind-passwd=${LDAPPASSWORD}
+iplanet-am-auth-ldap-server2=
+iplanet-am-auth-ldap-ssl-trust-all=false
+iplanet-am-auth-ldap-search-scope=SUBTREE
+iplanet-am-auth-ldap-search-filter=
+iplanet-am-auth-ldap-user-search-attributes=uid
+iplanet-am-auth-ldap-behera-password-policy-enabled=true
+iplanet-am-auth-ldap-bind-dn=cn=SBAC Admin
+iplanet-am-auth-ldap-min-password-length=6
+iplanet-am-auth-ldap-server-check=15

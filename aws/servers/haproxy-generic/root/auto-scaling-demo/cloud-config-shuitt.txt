@@ -1,0 +1,52 @@
+#cloud-config
+# Update apt database on first boot
+# (ie run apt-get update)
+#
+# Default: true
+
+# Upgrade the instance on first boot
+# (ie run apt-get upgrade)
+#
+# Default: false
+
+# Install additional packages on first boot
+#
+# Default: none
+#
+# if packages are specified, this apt_update will be set to true
+#
+packages:
+ - git
+ - nginx
+
+# add each entry to ~/.ssh/authorized_keys for the configured user
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0Y+tZvXN+lZkK/nLpSZhNk+OVdBMJ12+jOKXjRbQPZH9n7l3ckBkUlmisCFr5az6AYcxS8wc3UpCfdNqMhYdjY+1gk6QPG7Eh54vbLsdNPGGApurUJN2xYP1ChwCKtgHL/Z8ikyeNTTqdjEjyEBm9B7F2o1wJlU8tI2OlJqW/PmlyhH2N6NTuA6x4LiqIzwg21D55VNGFRlEu0IiuNonieB0d1m5+cyNxSgVessGddycxczqiCf/hst1E25lMsdCx/1bvDekysNCcbRqfmkmPrBv41xPOKnE1hdYk7tgkp0jYEjAOUtq6Tn3Rr35KZwXylqA8Hq5QnR/6rWOr3gvX AirDev
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTtzeyjVzkOM/yuGW9sscsWKSzbhJGnsNaEhs/1D9cz7wZp7wbaLRuF3uHbKS9UC2y7D08DNx15UBhZ0p/xlxYc5B2XNMwT38tXmJ2D/aIJxJvBY/Uue6OPuqZA3h9mUSe6saHmipePzeleLkKNq8QRyRUjGvnexsc8S7oXv0DiIdtFbTAJj2gd6UJJ8LHn4cVAp0lF5XHutELbNLL9LLOqwx/szyzf86wJdWvh5Sew0xO1WHHGuPDxdxSW/fLwebTiJRUkUDf67kVnVlewTFVqkyPhQNmn4Sh1QqPnbAwZqjVJH8rqeqc6Z6AFOZzmFyy9/zrUES4fsAQmBXAubTz AirProd
+
+
+ssh_import_id: [al-maisan]
+
+
+# run commands
+# default: none
+# runcmd contains a list of either lists or a string
+# each item will be executed in order at rc.local like level with
+# output to the console
+# - if the item is a list, the items will be properly executed as if
+#   passed to execve(3) (with the first arg as the command).
+# - if the item is a string, it will be simply written to the file and
+#   will be interpreted by 'sh'
+#
+# Note, that the list has to be proper yaml, so you have to escape
+# any characters yaml would eat (':' can be problematic)
+runcmd:
+ - [ mkdir, -p, /var/srv ]
+ - [ sh, -xc, "cd /var/srv; git clone git://github.com/freizeit/auto-scaling-demo.git" ]
+ - [ cp, -p, /var/srv/auto-scaling-demo/nginx.conf, /etc/nginx ]
+ - [ /etc/init.d/nginx, restart]
+ - [ sh, -xc, "cd /var/srv/auto-scaling-demo; python ./server.py > server.log 2>&1" ]
+
+# timezone: set the timezone for this instance
+# the value of 'timezone' must exist in /usr/share/zoneinfo
+timezone: Europe/Zurich

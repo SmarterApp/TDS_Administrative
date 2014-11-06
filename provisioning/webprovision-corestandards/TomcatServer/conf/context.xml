@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+  <!-- Default set of monitored resources -->
+  <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+  <!-- <Manager pathname="" /> -->
+  <!-- Uncomment this to enable Comet connection tacking (provides events
+              on session expiration as well as webapp lifecycle) -->
+  <!-- <Valve className="org.apache.catalina.valves.CometConnectionManagerValve"
+              /> -->
+  <!-- DB Resource for SqlServer DB - used for Proctor app -->
+
+  <!-- CoreStandards -->
+  <!-- DB Resource for CoreStandards -->
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver"
+            logAbandoned="true" logAbandonedTimeout="1800" maxActive="5" maxIdle="2" name="jdbc/contentstandards"
+            removeAbandoned="true" type="javax.sql.DataSource"
+            url="jdbc:mysql://DB_server:DB_port/DB_schema"
+            username="DB_username" password="DB_password" validationQuery="select 1" />
+  <Parameter name="ooExecPath" value="/opt/openoffice4/program"
+             type="java.lang.String" override="false" />
+  <Parameter name="ooSpreadsheetPath" value="/tmp/"
+             type="java.lang.String" override="false" />
+  <Parameter name="logger.coreStandardsDevLogPath" value="/usr/local/tomcat/logs"
+             type="java.lang.String" override="false" />
+  <!--  END CoreStandards -->
+
+</Context>
+

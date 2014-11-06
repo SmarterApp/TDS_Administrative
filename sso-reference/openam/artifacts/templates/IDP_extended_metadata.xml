@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntityConfig entityID="${IDPURL}" hosted="true" xmlns="urn:sun:fm:SAML:2.0:entityconfig">
+    <IDPSSOConfig metaAlias="/sbac/idp">
+        <Attribute name="idpAuthncontextMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPAuthnContextMapper</Value>
+        </Attribute>
+        <Attribute name="appLogoutUrl">
+            <Value/>
+        </Attribute>
+        <Attribute name="attributeMap">
+            <Value>sbacUUID=sbacUUID</Value>
+            <Value>givenName=givenName</Value>
+            <Value>cn=cn</Value>
+            <Value>sn=sn</Value>
+            <Value>sbacTenancyChain=sbacTenancyChain</Value>
+        </Attribute>
+        <Attribute name="proxyIDPFinderJSP">
+            <Value/>
+        </Attribute>
+        <Attribute name="autofedAttribute">
+            <Value/>
+        </Attribute>
+        <Attribute name="proxyIDPFinderClass">
+            <Value/>
+        </Attribute>
+        <Attribute name="wantNameIDEncrypted">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="signingCertAlias">
+            <Value>test</Value>
+        </Attribute>
+        <Attribute name="idpSessionSyncEnabled">
+            <Value>true</Value>
+        </Attribute>
+        <Attribute name="idpAuthncontextClassrefMapping">
+            <Value>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport|0||default</Value>
+        </Attribute>
+        <Attribute name="saeAppSecretList"/>
+        <Attribute name="encryptionCertAlias"/>
+        <Attribute name="assertionEffectiveTime">
+            <Value>600</Value>
+        </Attribute>
+        <Attribute name="autofedEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="wantMNIResponseSigned">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="discoveryBootstrappingEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="wantLogoutRequestSigned">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="cotlist">
+            <Value>sbacCoT</Value>
+        </Attribute>
+        <Attribute name="AuthUrl">
+            <Value/>
+        </Attribute>
+        <Attribute name="relayStateUrlList"/>
+        <Attribute name="wantArtifactResolveSigned">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="idpAccountMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPAccountMapper</Value>
+        </Attribute>
+        <Attribute name="wantLogoutResponseSigned">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="enableProxyIDPFinderForAllSPs">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="idpAdapter">
+            <Value/>
+        </Attribute>
+        <Attribute name="basicAuthUser">
+            <Value/>
+        </Attribute>
+        <Attribute name="assertionNotBeforeTimeSkew">
+            <Value>600</Value>
+        </Attribute>
+        <Attribute name="basicAuthPassword">
+            <Value/>
+        </Attribute>
+        <Attribute name="idpECPSessionMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPECPSessionMapper</Value>
+        </Attribute>
+        <Attribute name="wantMNIRequestSigned">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="assertionCacheEnabled">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="idpAttributeMapper">
+            <Value>com.sun.identity.saml2.plugins.DefaultIDPAttributeMapper</Value>
+        </Attribute>
+        <Attribute name="nameIDFormatMap">
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName=</Value>
+            <Value>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos=</Value>
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName=</Value>
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress=mail</Value>
+            <Value>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified=</Value>
+        </Attribute>
+        <Attribute name="metaAlias"/>
+        <Attribute name="RpUrl">
+            <Value/>
+        </Attribute>
+        <Attribute name="basicAuthOn">
+            <Value>false</Value>
+        </Attribute>
+        <Attribute name="saeIDPUrl">
+            <Value>${IDPURL}/idpsaehandler/metaAlias/sbac/idp</Value>
+        </Attribute>
+    </IDPSSOConfig>
+</EntityConfig>

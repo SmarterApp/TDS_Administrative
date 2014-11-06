@@ -1,0 +1,576 @@
+[1411444800] LOG ROTATION: DAILY
+[1411444800] LOG VERSION: 2.0
+[1411444800] CURRENT HOST STATE: art-db-uat-dl.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.82 ms
+[1411444800] CURRENT HOST STATE: art-db.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.68 ms
+[1411444800] CURRENT HOST STATE: art-uat-dl.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT HOST STATE: art.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT HOST STATE: auth-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 6.18 ms
+[1411444800] CURRENT HOST STATE: auth-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.71 ms
+[1411444800] CURRENT HOST STATE: auth-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.73 ms
+[1411444800] CURRENT HOST STATE: auth.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.73 ms
+[1411444800] CURRENT HOST STATE: auth.uat.opentestsystem.org;DOWN;HARD;10;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: build-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.75 ms
+[1411444800] CURRENT HOST STATE: build.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.79 ms
+[1411444800] CURRENT HOST STATE: cs-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.77 ms
+[1411444800] CURRENT HOST STATE: cs-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.79 ms
+[1411444800] CURRENT HOST STATE: cs-db.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT HOST STATE: cs-db.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: cs-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.77 ms
+[1411444800] CURRENT HOST STATE: cs-lb.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.63 ms
+[1411444800] CURRENT HOST STATE: cs.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT HOST STATE: cs.uat.opentestsystem.org;DOWN;HARD;1;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT HOST STATE: cs1.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.73 ms
+[1411444800] CURRENT HOST STATE: cs2.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT HOST STATE: cs3.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT HOST STATE: drcamp-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.05 ms
+[1411444800] CURRENT HOST STATE: fedlet-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 3.40 ms
+[1411444800] CURRENT HOST STATE: forum.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.60 ms
+[1411444800] CURRENT HOST STATE: idm-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 4.62 ms
+[1411444800] CURRENT HOST STATE: lb-scale-test.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT HOST STATE: lb-test.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.69 ms
+[1411444800] CURRENT HOST STATE: loadtest.node.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 2.14 ms
+[1411444800] CURRENT HOST STATE: mail-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.06 ms
+[1411444800] CURRENT HOST STATE: mail.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.71 ms
+[1411444800] CURRENT HOST STATE: mail.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.98 ms
+[1411444800] CURRENT HOST STATE: mail.uat.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT HOST STATE: mna-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.78 ms
+[1411444800] CURRENT HOST STATE: mna-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 2.16 ms
+[1411444800] CURRENT HOST STATE: mna-db.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.91 ms
+[1411444800] CURRENT HOST STATE: mna-db.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: mna-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1411444800] CURRENT HOST STATE: mna.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.70 ms
+[1411444800] CURRENT HOST STATE: mna.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT HOST STATE: mna.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: perm-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.72 ms
+[1411444800] CURRENT HOST STATE: perm-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.71 ms
+[1411444800] CURRENT HOST STATE: perm-db.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.78 ms
+[1411444800] CURRENT HOST STATE: perm-db.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: perm-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 2.18 ms
+[1411444800] CURRENT HOST STATE: perm.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT HOST STATE: perm.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.72 ms
+[1411444800] CURRENT HOST STATE: perm.uat.opentestsystem.org;DOWN;HARD;1;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT HOST STATE: pm-db-sso.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.81 ms
+[1411444800] CURRENT HOST STATE: pm-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT HOST STATE: pm-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.69 ms
+[1411444800] CURRENT HOST STATE: pm-db.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT HOST STATE: pm-db.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: pm-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 3.40 ms
+[1411444800] CURRENT HOST STATE: pm-lb.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.85 ms
+[1411444800] CURRENT HOST STATE: pm-sso.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.67 ms
+[1411444800] CURRENT HOST STATE: pm-test.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.29 ms
+[1411444800] CURRENT HOST STATE: pm.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.84 ms
+[1411444800] CURRENT HOST STATE: pm.uat.opentestsystem.org;DOWN;HARD;1;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT HOST STATE: pm1.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.64 ms
+[1411444800] CURRENT HOST STATE: pm2.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.69 ms
+[1411444800] CURRENT HOST STATE: pm3.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.91 ms
+[1411444800] CURRENT HOST STATE: portal-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.64 ms
+[1411444800] CURRENT HOST STATE: sftp-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.78 ms
+[1411444800] CURRENT HOST STATE: sftp.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.99 ms
+[1411444800] CURRENT HOST STATE: sftp.uat.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 3.28 ms
+[1411444800] CURRENT HOST STATE: sso-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.61 ms
+[1411444800] CURRENT HOST STATE: tds-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT HOST STATE: tds-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT HOST STATE: tds-db.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.02 seconds)
+[1411444800] CURRENT HOST STATE: tds-dev-perf.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.64 ms
+[1411444800] CURRENT HOST STATE: tds-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.95 ms
+[1411444800] CURRENT HOST STATE: tds.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.77 ms
+[1411444800] CURRENT HOST STATE: tds.uat.opentestsystem.org;DOWN;HARD;1;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT HOST STATE: tib-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.71 ms
+[1411444800] CURRENT HOST STATE: tib-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT HOST STATE: tib-db.uat.opentestsystem.org;DOWN;HARD;1;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT HOST STATE: tib-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT HOST STATE: tib.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.78 ms
+[1411444800] CURRENT HOST STATE: tib.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: tib2-db-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 3.58 ms
+[1411444800] CURRENT HOST STATE: tib2-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.77 ms
+[1411444800] CURRENT HOST STATE: tr-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.60 ms
+[1411444800] CURRENT HOST STATE: tr-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT HOST STATE: tr-db.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: tr-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.83 ms
+[1411444800] CURRENT HOST STATE: tr.ci.opentestsystem.org;DOWN;HARD;10;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: tr.uat.opentestsystem.org;DOWN;HARD;1;(Host check timed out after 30.01 seconds)
+[1411444800] CURRENT HOST STATE: tsb-db.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 2.55 ms
+[1411444800] CURRENT HOST STATE: tsb-db.dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.96 ms
+[1411444800] CURRENT HOST STATE: tsb-db.uat.opentestsystem.org;DOWN;HARD;1;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT HOST STATE: tsb-dev.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.72 ms
+[1411444800] CURRENT HOST STATE: tsb.ci.opentestsystem.org;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 1.82 ms
+[1411444800] CURRENT HOST STATE: tsb.uat.opentestsystem.org;DOWN;HARD;1;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: art-db-uat-dl.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT SERVICE STATE: art-db-uat-dl.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 78063 MB (67% inode=98%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: art-db-uat-dl.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: art-db-uat-dl.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 255 MB - 6% used
+[1411444800] CURRENT SERVICE STATE: art-db.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.80 ms
+[1411444800] CURRENT SERVICE STATE: art-db.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 78064 MB (67% inode=98%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: art-db.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: art-db.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 184 MB - 4% used
+[1411444800] CURRENT SERVICE STATE: art-uat-dl.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.56 ms
+[1411444800] CURRENT SERVICE STATE: art-uat-dl.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53314 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: art-uat-dl.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: art-uat-dl.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1397 MB - 37% used
+[1411444800] CURRENT SERVICE STATE: art-uat-dl.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: art.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.66 ms
+[1411444800] CURRENT SERVICE STATE: art.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53399 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: art.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: art.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1193 MB - 31% used
+[1411444800] CURRENT SERVICE STATE: art.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: auth-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.67 ms
+[1411444800] CURRENT SERVICE STATE: auth-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 40875 MB (53% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: auth-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: auth-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 420 MB - 11% used
+[1411444800] CURRENT SERVICE STATE: auth-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: auth-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 26006 MB (33% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 110796 MB (96% inode=99%):
+[1411444800] CURRENT SERVICE STATE: auth-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: auth-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 385 MB - 10% used
+[1411444800] CURRENT SERVICE STATE: auth-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.37 ms
+[1411444800] CURRENT SERVICE STATE: auth-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53323 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: auth-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: auth-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1511 MB - 40% used
+[1411444800] CURRENT SERVICE STATE: auth-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: auth.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: auth.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53848 MB (70% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: auth.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: auth.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1290 MB - 34% used
+[1411444800] CURRENT SERVICE STATE: auth.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: auth.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: auth.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: auth.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: auth.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: auth.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: build-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.52 ms
+[1411444800] CURRENT SERVICE STATE: build-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 9817 MB (12% inode=75%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: build-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: build-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 2233 MB - 59% used
+[1411444800] CURRENT SERVICE STATE: build-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: build.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT SERVICE STATE: build.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 22678 MB (29% inode=74%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: build.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: build.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1927 MB - 51% used
+[1411444800] CURRENT SERVICE STATE: build.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: cs-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.69 ms
+[1411444800] CURRENT SERVICE STATE: cs-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 34129 MB (44% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 658 MB - 17% used
+[1411444800] CURRENT SERVICE STATE: cs-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.72 ms
+[1411444800] CURRENT SERVICE STATE: cs-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 34306 MB (44% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mysql 51007 MB (66% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 947 MB - 25% used
+[1411444800] CURRENT SERVICE STATE: cs-db.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: cs-db.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 45493 MB (59% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs-db.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs-db.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 696 MB - 18% used
+[1411444800] CURRENT SERVICE STATE: cs-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: cs-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: cs-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: cs-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: cs-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.72 ms
+[1411444800] CURRENT SERVICE STATE: cs-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53221 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1397 MB - 37% used
+[1411444800] CURRENT SERVICE STATE: cs-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: cs-lb.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.63 ms
+[1411444800] CURRENT SERVICE STATE: cs-lb.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 73441 MB (95% inode=96%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs-lb.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs-lb.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 248 MB - 14% used
+[1411444800] CURRENT SERVICE STATE: cs.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: cs.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53124 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1179 MB - 31% used
+[1411444800] CURRENT SERVICE STATE: cs.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: cs.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: cs.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: cs.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: cs.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: cs.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: cs1.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.71 ms
+[1411444800] CURRENT SERVICE STATE: cs1.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53362 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs1.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs1.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1176 MB - 31% used
+[1411444800] CURRENT SERVICE STATE: cs1.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: cs2.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.72 ms
+[1411444800] CURRENT SERVICE STATE: cs2.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53343 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs2.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs2.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1186 MB - 31% used
+[1411444800] CURRENT SERVICE STATE: cs2.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: cs3.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT SERVICE STATE: cs3.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53342 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: cs3.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: cs3.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1232 MB - 32% used
+[1411444800] CURRENT SERVICE STATE: cs3.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: drcamp-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.09 ms
+[1411444800] CURRENT SERVICE STATE: drcamp-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 5002 MB (65% inode=69%): /dev 1867 MB (99% inode=99%): /run 749 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /opt 71221 MB (93% inode=99%):
+[1411444800] CURRENT SERVICE STATE: drcamp-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.23, 0.15, 0.10
+[1411444800] CURRENT SERVICE STATE: drcamp-dev.opentestsystem.org;Mem Monitoring;WARNING;HARD;3;MEMORY WARNING - Total: 3750 MB - Used: 3209 MB - 85% used!
+[1411444800] CURRENT SERVICE STATE: drcamp-dev.opentestsystem.org;Tomcat Monitoring;CRITICAL;SOFT;1;CRITICAL: Application  is not running!
+[1411444800] CURRENT SERVICE STATE: fedlet-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.79 ms
+[1411444800] CURRENT SERVICE STATE: fedlet-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 4651 MB (60% inode=70%): /dev 818 MB (99% inode=99%): /run 330 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (99% inode=99%):
+[1411444800] CURRENT SERVICE STATE: fedlet-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: fedlet-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 494 MB - 29% used
+[1411444800] CURRENT SERVICE STATE: fedlet-dev.opentestsystem.org;Tomcat Monitoring;CRITICAL;SOFT;1;CRITICAL: Application  is not running!
+[1411444800] CURRENT SERVICE STATE: forum.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.68 ms
+[1411444800] CURRENT SERVICE STATE: forum.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 5736 MB (59% inode=73%): /dev 287 MB (99% inode=99%): /run 58 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 295 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: forum.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: forum.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 590 MB - Used: 138 MB - 23% used
+[1411444800] CURRENT SERVICE STATE: idm-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.64 ms
+[1411444800] CURRENT SERVICE STATE: idm-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 1104 MB (14% inode=65%): /dev 1867 MB (99% inode=99%): /run 749 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /opt 76222 MB (99% inode=99%):
+[1411444800] CURRENT SERVICE STATE: idm-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: idm-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1422 MB - 37% used
+[1411444800] CURRENT SERVICE STATE: idm-dev.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CRITICAL: Application  is not running!
+[1411444800] CURRENT SERVICE STATE: lb-scale-test.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT SERVICE STATE: lb-scale-test.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 2960 MB (38% inode=59%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: lb-scale-test.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: lb-scale-test.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 257 MB - 15% used
+[1411444800] CURRENT SERVICE STATE: lb-test.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.70 ms
+[1411444800] CURRENT SERVICE STATE: lb-test.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 73433 MB (95% inode=96%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: lb-test.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: lb-test.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 250 MB - 15% used
+[1411444800] CURRENT SERVICE STATE: loadtest.node.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.72 ms
+[1411444800] CURRENT SERVICE STATE: loadtest.node.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 54544 MB (71% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: loadtest.node.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: loadtest.node.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 759 MB - 20% used
+[1411444800] CURRENT SERVICE STATE: loadtest.node.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: mail-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.48 ms
+[1411444800] CURRENT SERVICE STATE: mail-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 5168 MB (67% inode=64%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mail-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.01, 0.04, 0.05
+[1411444800] CURRENT SERVICE STATE: mail-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 530 MB - 14% used
+[1411444800] CURRENT SERVICE STATE: mail.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.73 ms
+[1411444800] CURRENT SERVICE STATE: mail.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 5249 MB (68% inode=65%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mail.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mail.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 196 MB - 5% used
+[1411444800] CURRENT SERVICE STATE: mail.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: mail.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 5245 MB (68% inode=65%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mail.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mail.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 312 MB - 8% used
+[1411444800] CURRENT SERVICE STATE: mail.uat.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: mail.uat.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 5239 MB (68% inode=65%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mail.uat.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mail.uat.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 309 MB - 8% used
+[1411444800] CURRENT SERVICE STATE: mna-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.80 ms
+[1411444800] CURRENT SERVICE STATE: mna-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 36152 MB (47% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mna-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mna-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 376 MB - 10% used
+[1411444800] CURRENT SERVICE STATE: mna-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.66 ms
+[1411444800] CURRENT SERVICE STATE: mna-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 26005 MB (33% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 66480 MB (57% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mna-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mna-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 558 MB - 14% used
+[1411444800] CURRENT SERVICE STATE: mna-db.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.88 ms
+[1411444800] CURRENT SERVICE STATE: mna-db.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 36281 MB (47% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mna-db.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mna-db.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 199 MB - 5% used
+[1411444800] CURRENT SERVICE STATE: mna-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: mna-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: mna-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: mna-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: mna-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.06 ms
+[1411444800] CURRENT SERVICE STATE: mna-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 67850 MB (88% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mna-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.25, 0.22, 0.34
+[1411444800] CURRENT SERVICE STATE: mna-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 975 MB - 25% used
+[1411444800] CURRENT SERVICE STATE: mna-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: mna.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT SERVICE STATE: mna.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 70247 MB (91% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mna.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mna.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 687 MB - 18% used
+[1411444800] CURRENT SERVICE STATE: mna.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: mna.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.96 ms
+[1411444800] CURRENT SERVICE STATE: mna.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 70407 MB (91% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: mna.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: mna.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 544 MB - 14% used
+[1411444800] CURRENT SERVICE STATE: mna.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: mna.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: mna.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: mna.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: mna.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: mna.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: perm-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT SERVICE STATE: perm-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 34290 MB (44% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: perm-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: perm-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 776 MB - 20% used
+[1411444800] CURRENT SERVICE STATE: perm-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.02 ms
+[1411444800] CURRENT SERVICE STATE: perm-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 34307 MB (44% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mysql 51007 MB (66% inode=99%):
+[1411444800] CURRENT SERVICE STATE: perm-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: perm-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 754 MB - 20% used
+[1411444800] CURRENT SERVICE STATE: perm-db.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT SERVICE STATE: perm-db.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 34314 MB (44% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: perm-db.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: perm-db.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 657 MB - 17% used
+[1411444800] CURRENT SERVICE STATE: perm-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: perm-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: perm-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: perm-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: perm-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.84 ms
+[1411444800] CURRENT SERVICE STATE: perm-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 52468 MB (68% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: perm-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: perm-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1349 MB - 35% used
+[1411444800] CURRENT SERVICE STATE: perm-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: perm.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.71 ms
+[1411444800] CURRENT SERVICE STATE: perm.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53032 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: perm.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: perm.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1156 MB - 30% used
+[1411444800] CURRENT SERVICE STATE: perm.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: perm.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.79 ms
+[1411444800] CURRENT SERVICE STATE: perm.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53163 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: perm.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: perm.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1061 MB - 28% used
+[1411444800] CURRENT SERVICE STATE: perm.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: perm.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: perm.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: perm.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: perm.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: perm.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm-db-sso.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.77 ms
+[1411444800] CURRENT SERVICE STATE: pm-db-sso.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 40201 MB (52% inode=97%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-db-sso.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-db-sso.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 241 MB - 6% used
+[1411444800] CURRENT SERVICE STATE: pm-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.70 ms
+[1411444800] CURRENT SERVICE STATE: pm-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 40007 MB (52% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 252 MB - 6% used
+[1411444800] CURRENT SERVICE STATE: pm-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT SERVICE STATE: pm-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 26340 MB (34% inode=97%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 111260 MB (96% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 332 MB - 8% used
+[1411444800] CURRENT SERVICE STATE: pm-db.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: pm-db.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 57162 MB (74% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-db.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-db.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 304 MB - 8% used
+[1411444800] CURRENT SERVICE STATE: pm-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: pm-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.60 ms
+[1411444800] CURRENT SERVICE STATE: pm-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 72344 MB (94% inode=95%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 640 MB - 38% used
+[1411444800] CURRENT SERVICE STATE: pm-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: pm-lb.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.03 ms
+[1411444800] CURRENT SERVICE STATE: pm-lb.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 73329 MB (95% inode=96%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-lb.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-lb.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 237 MB - 14% used
+[1411444800] CURRENT SERVICE STATE: pm-sso.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.65 ms
+[1411444800] CURRENT SERVICE STATE: pm-sso.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 72669 MB (94% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-sso.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.01, 0.03, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-sso.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 556 MB - 14% used
+[1411444800] CURRENT SERVICE STATE: pm-sso.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: pm-test.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.25 ms
+[1411444800] CURRENT SERVICE STATE: pm-test.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 72396 MB (94% inode=95%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm-test.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm-test.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 242 MB - 14% used
+[1411444800] CURRENT SERVICE STATE: pm.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.69 ms
+[1411444800] CURRENT SERVICE STATE: pm.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 72234 MB (94% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 702 MB - 18% used
+[1411444800] CURRENT SERVICE STATE: pm.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: pm.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: pm.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: pm1.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.68 ms
+[1411444800] CURRENT SERVICE STATE: pm1.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53346 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm1.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm1.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1101 MB - 29% used
+[1411444800] CURRENT SERVICE STATE: pm1.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: pm2.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.66 ms
+[1411444800] CURRENT SERVICE STATE: pm2.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53319 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm2.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm2.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1147 MB - 30% used
+[1411444800] CURRENT SERVICE STATE: pm3.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.63 ms
+[1411444800] CURRENT SERVICE STATE: pm3.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53308 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: pm3.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: pm3.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1163 MB - 30% used
+[1411444800] CURRENT SERVICE STATE: portal-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.63 ms
+[1411444800] CURRENT SERVICE STATE: portal-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 73067 MB (95% inode=95%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: portal-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: portal-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 313 MB - 18% used
+[1411444800] CURRENT SERVICE STATE: sftp-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT SERVICE STATE: sftp-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 65569 MB (85% inode=95%): /dev 287 MB (99% inode=99%): /run 58 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 295 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: sftp-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: sftp-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 590 MB - Used: 102 MB - 17% used
+[1411444800] CURRENT SERVICE STATE: sftp.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.55 ms
+[1411444800] CURRENT SERVICE STATE: sftp.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 69812 MB (91% inode=96%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: sftp.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: sftp.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 106 MB - 6% used
+[1411444800] CURRENT SERVICE STATE: sftp.uat.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 3.52 ms
+[1411444800] CURRENT SERVICE STATE: sftp.uat.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 68808 MB (89% inode=95%): /dev 818 MB (99% inode=99%): /run 165 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 826 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: sftp.uat.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.01, 0.02, 0.05
+[1411444800] CURRENT SERVICE STATE: sftp.uat.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 1652 MB - Used: 129 MB - 7% used
+[1411444800] CURRENT SERVICE STATE: sso-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.64 ms
+[1411444800] CURRENT SERVICE STATE: sso-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 1590 MB (20% inode=64%): /dev 3717 MB (99% inode=99%): /run 744 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 3725 MB (100% inode=99%): /opt 62045 MB (81% inode=91%):
+[1411444800] CURRENT SERVICE STATE: sso-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: sso-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 7450 MB - Used: 1691 MB - 22% used
+[1411444800] CURRENT SERVICE STATE: sso-dev.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CRITICAL: Application  is not running!
+[1411444800] CURRENT SERVICE STATE: tds-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.70 ms
+[1411444800] CURRENT SERVICE STATE: tds-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 14833 MB (18% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tds-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tds-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1044 MB - 27% used
+[1411444800] CURRENT SERVICE STATE: tds-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.73 ms
+[1411444800] CURRENT SERVICE STATE: tds-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53691 MB (66% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 111260 MB (96% inode=99%): /var/lib/mysql 50460 MB (65% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tds-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.01, 0.03, 0.05
+[1411444800] CURRENT SERVICE STATE: tds-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 955 MB - 25% used
+[1411444800] CURRENT SERVICE STATE: tds-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tds-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tds-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tds-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tds-dev-perf.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.61 ms
+[1411444800] CURRENT SERVICE STATE: tds-dev-perf.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 42972 MB (56% inode=94%): /dev 7481 MB (99% inode=99%): /run 1497 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 7489 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tds-dev-perf.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tds-dev-perf.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 14979 MB - Used: 1902 MB - 12% used
+[1411444800] CURRENT SERVICE STATE: tds-dev-perf.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tds-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.79 ms
+[1411444800] CURRENT SERVICE STATE: tds-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 42440 MB (55% inode=94%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tds-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.05, 0.03, 0.05
+[1411444800] CURRENT SERVICE STATE: tds-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 2176 MB - 57% used
+[1411444800] CURRENT SERVICE STATE: tds-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tds.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.78 ms
+[1411444800] CURRENT SERVICE STATE: tds.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 49017 MB (64% inode=94%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tds.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tds.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 2181 MB - 58% used
+[1411444800] CURRENT SERVICE STATE: tds.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;manager_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tds.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tds.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tds.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tds.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tds.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.80 ms
+[1411444800] CURRENT SERVICE STATE: tib-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 21859 MB (28% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tib-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tib-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 638 MB - 16% used
+[1411444800] CURRENT SERVICE STATE: tib-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.89 ms
+[1411444800] CURRENT SERVICE STATE: tib-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 26001 MB (33% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 89043 MB (77% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tib-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tib-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 638 MB - 16% used
+[1411444800] CURRENT SERVICE STATE: tib-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tib-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT SERVICE STATE: tib-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 54112 MB (70% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tib-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tib-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1305 MB - 34% used
+[1411444800] CURRENT SERVICE STATE: tib-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tib.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.73 ms
+[1411444800] CURRENT SERVICE STATE: tib.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 54014 MB (70% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tib.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tib.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1085 MB - 28% used
+[1411444800] CURRENT SERVICE STATE: tib.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tib.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tib.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tib2-db-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.74 ms
+[1411444800] CURRENT SERVICE STATE: tib2-db-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 26006 MB (33% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 96721 MB (84% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tib2-db-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tib2-db-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 638 MB - 16% used
+[1411444800] CURRENT SERVICE STATE: tib2-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.69 ms
+[1411444800] CURRENT SERVICE STATE: tib2-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 54111 MB (70% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tib2-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tib2-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 982 MB - 26% used
+[1411444800] CURRENT SERVICE STATE: tib2-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tr-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.63 ms
+[1411444800] CURRENT SERVICE STATE: tr-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 40235 MB (52% inode=96%): /dev 7481 MB (99% inode=99%): /run 1497 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 7490 MB (100% inode=99%): /var/lib/mongodb 111052 MB (96% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tr-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tr-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 14980 MB - Used: 545 MB - 3% used
+[1411444800] CURRENT SERVICE STATE: tr-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 2.73 ms
+[1411444800] CURRENT SERVICE STATE: tr-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 27800 MB (36% inode=97%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 110027 MB (95% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tr-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tr-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 505 MB - 13% used
+[1411444800] CURRENT SERVICE STATE: tr-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tr-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tr-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tr-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tr-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.92 ms
+[1411444800] CURRENT SERVICE STATE: tr-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53254 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tr-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tr-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1982 MB - 52% used
+[1411444800] CURRENT SERVICE STATE: tr-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tr.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.76 ms
+[1411444800] CURRENT SERVICE STATE: tr.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 50063 MB (65% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tr.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.03, 0.04, 0.05
+[1411444800] CURRENT SERVICE STATE: tr.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1202 MB - 32% used
+[1411444800] CURRENT SERVICE STATE: tr.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tr.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tr.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tr.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tr.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tr.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tsb-db.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.97 ms
+[1411444800] CURRENT SERVICE STATE: tsb-db.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 39777 MB (51% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tsb-db.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tsb-db.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 401 MB - 10% used
+[1411444800] CURRENT SERVICE STATE: tsb-db.dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: tsb-db.dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 25992 MB (33% inode=96%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%): /var/lib/mongodb 111052 MB (96% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tsb-db.dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tsb-db.dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 337 MB - 8% used
+[1411444800] CURRENT SERVICE STATE: tsb-db.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tsb-db.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tsb-db.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tsb-db.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tsb-dev.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.66 ms
+[1411444800] CURRENT SERVICE STATE: tsb-dev.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53195 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tsb-dev.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tsb-dev.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1506 MB - 40% used
+[1411444800] CURRENT SERVICE STATE: tsb-dev.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tsb.ci.opentestsystem.org;Alive Monitoring;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 1.75 ms
+[1411444800] CURRENT SERVICE STATE: tsb.ci.opentestsystem.org;Disk Monitoring;OK;HARD;1;DISK OK - free space: / 53065 MB (69% inode=95%): /dev 1867 MB (99% inode=99%): /run 374 MB (99% inode=99%): /run/lock 5 MB (100% inode=99%): /run/shm 1875 MB (100% inode=99%):
+[1411444800] CURRENT SERVICE STATE: tsb.ci.opentestsystem.org;Load Monitoring;OK;HARD;1;OK - load average: 0.00, 0.01, 0.05
+[1411444800] CURRENT SERVICE STATE: tsb.ci.opentestsystem.org;Mem Monitoring;OK;HARD;1;MEMORY OK - Total: 3750 MB - Used: 1240 MB - 33% used
+[1411444800] CURRENT SERVICE STATE: tsb.ci.opentestsystem.org;Tomcat Monitoring;OK;HARD;1;_JVM_OK:
+[1411444800] CURRENT SERVICE STATE: tsb.uat.opentestsystem.org;Alive Monitoring;CRITICAL;HARD;3;PING CRITICAL - Packet loss = 100%
+[1411444800] CURRENT SERVICE STATE: tsb.uat.opentestsystem.org;Disk Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tsb.uat.opentestsystem.org;Load Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tsb.uat.opentestsystem.org;Mem Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444800] CURRENT SERVICE STATE: tsb.uat.opentestsystem.org;Tomcat Monitoring;CRITICAL;HARD;3;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411444833] wproc: Core Worker 23586: job 22139 (pid=26717) timed out. Killing it
+[1411444833] wproc: CHECK job 22139 from worker Core Worker 23586 timed out after 30.05s
+[1411444833] wproc:   host=perm-db.uat.opentestsystem.org; service=(null);
+[1411444833] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1411444833] Warning: Check of host 'perm-db.uat.opentestsystem.org' timed out after 30.05 seconds
+[1411444833] wproc: Core Worker 23586: job 22139 (pid=26717): Dormant child reaped
+[1411444854] wproc: Core Worker 23586: job 22144 (pid=27113) timed out. Killing it
+[1411444854] wproc: CHECK job 22144 from worker Core Worker 23586 timed out after 30.01s
+[1411444854] wproc:   host=tr-db.uat.opentestsystem.org; service=(null);
+[1411444854] wproc:   early_timeout=1; exited_ok=0; wait_status=0; error_code=62;
+[1411444854] Warning: Check of host 'tr-db.uat.opentestsystem.org' timed out after 30.01 seconds
+[1411444854] wproc: Core Worker 23586: job 22144 (pid=27113): Dormant child reaped
+[1411444870] Caught SIGTERM, shutting down...
+[1411444870] Successfully shutdown... (PID=23584)
+[1411444870] Event broker module 'NERD' deinitialized successfully.
+[1411444871] Nagios 4.0.8 starting... (PID=30895)
+[1411444871] Local time is Tue Sep 23 00:01:11 EDT 2014
+[1411444871] LOG VERSION: 2.0
+[1411444871] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1411444871] qh: core query handler registered
+[1411444871] nerd: Channel hostchecks registered successfully
+[1411444871] nerd: Channel servicechecks registered successfully
+[1411444871] nerd: Channel opathchecks registered successfully
+[1411444871] nerd: Fully initialized and ready to rock!
+[1411444871] wproc: Successfully registered manager as @wproc with query handler
+[1411444871] wproc: Registry request: name=Core Worker 30898;pid=30898
+[1411444871] wproc: Registry request: name=Core Worker 30899;pid=30899
+[1411444871] wproc: Registry request: name=Core Worker 30897;pid=30897
+[1411444871] wproc: Registry request: name=Core Worker 30900;pid=30900
+[1411444871] Successfully launched command file worker with pid 30901
+[1411448471] Auto-save of retention data completed successfully.
+[1411452071] Auto-save of retention data completed successfully.
+[1411455671] Auto-save of retention data completed successfully.
+[1411459271] Auto-save of retention data completed successfully.
+[1411462871] Auto-save of retention data completed successfully.
+[1411466471] Auto-save of retention data completed successfully.
+[1411470071] Auto-save of retention data completed successfully.
+[1411473671] Auto-save of retention data completed successfully.
+[1411477271] Auto-save of retention data completed successfully.
+[1411480871] Auto-save of retention data completed successfully.
+[1411484471] Auto-save of retention data completed successfully.
+[1411488071] Auto-save of retention data completed successfully.
+[1411488213] SERVICE ALERT: tr-dev.opentestsystem.org;Tomcat Monitoring;CRITICAL;SOFT;1;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411488333] SERVICE ALERT: tr-dev.opentestsystem.org;Tomcat Monitoring;CRITICAL;SOFT;2;CHECK_NRPE: Socket timeout after 10 seconds.
+[1411488443] SERVICE ALERT: tr-dev.opentestsystem.org;Tomcat Monitoring;OK;SOFT;3;_JVM_OK:
+[1411491671] Auto-save of retention data completed successfully.
+[1411495271] Auto-save of retention data completed successfully.
+[1411498871] Auto-save of retention data completed successfully.
+[1411502471] Auto-save of retention data completed successfully.
+[1411506071] Auto-save of retention data completed successfully.
+[1411509671] Auto-save of retention data completed successfully.
+[1411513271] Auto-save of retention data completed successfully.
+[1411516871] Auto-save of retention data completed successfully.
+[1411520471] Auto-save of retention data completed successfully.

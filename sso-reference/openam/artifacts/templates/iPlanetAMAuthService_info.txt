@@ -1,0 +1,2 @@
+iplanet-am-auth-org-config=sbacChain
+iplanet-am-auth-login-success-url=/auth/idm/EndUser?action=sq

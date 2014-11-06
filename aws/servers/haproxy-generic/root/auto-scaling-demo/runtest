@@ -1,0 +1,124 @@
+#!/bin/bash
+
+# set -x
+
+declare -i offset
+declare -i duration
+
+help() {
+cat <<HSD
+`basename $0` runs the auto-scaling demo
+
+The command line arguments are as follows:
+
+    --offset=N          Timing offset parameter for the clients who create
+                        the load on the server [default: 75 secs]
+
+    --elb-url=URL       The URL of the elastic load balancer through which
+                        requests are to be sent.
+HSD
+exit 0
+}
+
+if [ $# -eq 0 ]; then
+    help
+fi
+
+offset=75
+elb_url=""
+
+# Process the command-line arguments
+for i in $*
+do
+    case $i in
+    --offset=*)
+        offset=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    --elb-url=*)
+        elb_url=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    -h|--help)
+        help
+        ;;
+    *)
+        echo "!! Uknown option: " $i
+        exit 2
+        ;;
+    esac
+done
+
+stats_start_date=`date --utc +"%Y-%m-%dT%H:%M:00Z"`
+echo "test run started at $stats_start_date" > last_run.stats
+
+# Client A (delay: 0 * offset, duration: 7 * offset)
+(( duration = 7 * offset ))
+gnome-terminal --title=A --geometry 36x25 -x ./client $duration $elb_url AAA 2>/dev/null
+
+echo ""
+date
+echo "started client A, it will run for $duration seconds; sleeping $offset seconds before starting client B"
+
+./track_instances $duration > last_run.instances &
+
+sleep $offset
+
+# Client B (delay: 1 * offset, duration: 4 * offset)
+(( duration = 4 * offset ))
+gnome-terminal --title=B --geometry 36x25 -x ./client $duration $elb_url BBB 2>/dev/null
+
+echo ""
+date
+echo "started client B, it will run for $duration seconds; sleeping $offset seconds before starting client C"
+
+sleep $offset
+
+# Client C (delay: 2 * offset, duration: 4 * offset)
+(( duration = 4 * offset ))
+gnome-terminal --title=C --geometry 36x25 -x ./client $duration $elb_url CCC 2>/dev/null
+
+echo ""
+date
+echo "started client C, it will run for $duration seconds; sleeping $offset seconds before starting client D"
+
+sleep $offset
+
+# Client D (delay: 3 * offset, duration: 1 * offset)
+(( duration = 1 * offset ))
+gnome-terminal --title=D --geometry 36x25 -x ./client $duration $elb_url DDD 2>/dev/null
+
+echo ""
+date
+echo "started client D, it will run for $duration seconds"
+
+sleep $offset
+
+echo ""
+date
+echo "client D terminated"
+
+while ((1)); do
+    echo ""
+    date
+    ps ax | grep "client " | egrep -v '(dhclient|grep)'
+    sleep 15
+    # Are we done? All clients terminated?
+    numclients=`ps ax | grep "client " | egrep -v '(dhclient|grep)' | wc -l`
+    if (( numclients == 0 )); then
+        break
+    fi
+done
+
+asg_name=`as-describe-auto-scaling-groups | grep AUTO-SCALING-GROUP | grep asg- | awk '{ print $2 }'`
+if [ ! -z "$asg_name" ]; then
+    echo "" >> last_run.stats
+    echo "$asg_name" >> last_run.stats
+    mon-get-stats --metric-name CPUUtilization --namespace AWS/EC2 --dimensions AutoScalingGroupName=$asg_name --statistics Average --start-time $stats_start_date >> last_run.stats
+fi
+
+for iid in `grep '^INSTANCE ' last_run.instances | sort -u | awk '{ print $2 }' | sort -u`; do
+    echo "" >> last_run.stats
+    echo $iid >> last_run.stats
+    mon-get-stats --metric-name CPUUtilization --namespace AWS/EC2 --dimensions InstanceId=$iid --statistics Average --start-time $stats_start_date >> last_run.stats
+done
+
+mon-describe-alarm-history | head -n 50 > last_run.alarms

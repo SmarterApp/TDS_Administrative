@@ -1,0 +1,158 @@
+#!/bin/bash
+
+# set -x
+. /home/ec2/ec2.env
+
+help() {
+cat <<HSD
+`basename $0` initialises the infrastucture for the aws auto-scaling demo.
+
+The command line arguments are as follows:
+
+    --action=[setup|teardown]   What to do [default: "setup"]
+
+    --ami=ami           The AMI to use [default: ami-3bc7c54f]
+    --azs=az1,az2       Availability zones [default "<region>a"]
+    --base-name=name    Will be used to name launch config and auto-scaling
+                        group.
+    --group=group       Name of the AWS security group to use
+                        [default: rax-ast-demo-worker]
+    --region=region     Name of the AWS regions to use [default: eu-west-1]
+HSD
+exit 0
+}
+
+if [ $# -eq 0 ]; then
+    help
+fi
+
+action="setup"
+azs=""
+base_name=""
+group="air_development"
+region="us-east-1"
+ami="ami-d869acb0"
+notification_arn="arn:aws:sns:us-east-1:334542640272:server_creation_top"
+
+
+# Process the command-line arguments
+for i in $*
+do
+    case $i in
+    --action=*)
+        action=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    --ami=*)
+        ami=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    --azs=*)
+        azs=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    --base-name=*)
+        base_name=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    --group=*)
+        group=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    --region=*)
+        region=`echo $i | sed 's/[-a-zA-Z0-9]*=//'`
+        ;;
+    -h|--help)
+        help
+        ;;
+    *)
+        echo "!! Uknown option: " $i
+        exit 2
+        ;;
+    esac
+done
+
+# Mandatory command-line args
+if [ -z "$base_name" ]; then
+    echo "!! Please specify a base name."
+    exit 3
+fi
+
+# Derived parameters
+if [ -z "$azs" ]; then
+    azs="${region}a"
+fi
+
+
+# Do the actual work (setup|teardown)
+
+if [ "$action" == "setup" ]; then
+    if [ -z "$group" ]; then
+        echo "!! Please specify a security group."
+        exit 4
+    fi
+
+    aws autoscaling create-launch-configuration --launch-configuration-name "lc-$base_name" \
+        --security-groups $group \
+        --image-id $ami \
+        --instance-type m1.small \
+        --key AirDev \
+        --user-data cloud-config-shuitt.txt \
+        --region $region
+
+    aws autoscaling create-auto-scaling-group --auto-scaling-group-name "asg-$base_name" \
+        --launch-configuration "lc-$base_name" \
+        --min-size 1 \
+        --max-size 5 \
+        --tag "Key=Name, Value=$base_name" \
+        --availability-zones $azs \
+        --health-check-type EC2 \
+        --default-cooldown 300 \
+        --region $region
+
+    # Scale up policy
+    upp_arn=`aws autoscaling put-scaling-policy --policy-name "sp-UP-$base_name" \
+        --scaling-adjustment 2 \
+        --auto-scaling-group "asg-$base_name" \
+        --adjustment-type ChangeInCapacity \
+        --cooldown 300 \
+        --region $region 2>&1 | awk -F\" '{print $4}'`
+
+    # Get messages about scaling to add to HAProxy
+    aws autoscaling put-notification-configuration --auto-scaling-group-name  "asg-$base_name" --notification-types autoscaling:EC2_INSTANCE_LAUNCH autoscaling:EC2_INSTANCE_TERMINATE --topic-arn "$notification_arn" --region $region
+
+    aws cloudwatch put-metric-alarm --alarm-name KaseHighCPUAlarm \
+        --alarm-actions $upp_arn \
+        --metric-name CPUUtilization \
+        --namespace "AWS/EC2" \
+        --statistic Average \
+        --period 60 \
+        --evaluation-periods 1 \
+        --threshold 59 \
+        --comparison-operator GreaterThanOrEqualToThreshold \
+        --dimensions "Name=AutoScalingGroupName,Value=asg-$base_name" \
+        --region $region
+
+    # Scale down policy
+    dnp_arn=`aws autoscaling put-scaling-policy --policy-name "sp-DOWN-$base_name" \
+        --scaling-adjustment=-1 \
+        --auto-scaling-group "asg-$base_name" \
+        --adjustment-type ChangeInCapacity \
+        --cooldown 300 \
+        --region $region 2>&1 | awk -F\" '{print $4}'`
+
+    aws cloudwatch put-metric-alarm --alarm-name KaseLowCPUAlarm \
+        --alarm-actions $dnp_arn \
+        --metric-name CPUUtilization \
+        --namespace "AWS/EC2" \
+        --statistic Average \
+        --period 60 \
+        --evaluation-periods 1 \
+        --threshold 41 \
+        --comparison-operator LessThanOrEqualToThreshold \
+        --dimensions "Name=AutoScalingGroupName,Value=asg-$base_name" \
+        --region $region
+else
+    # The teardown case
+    aws autoscaling delete-notification-configuration --auto-scaling-group-name  "asg-$base_name" --topic-arn "$notification_arn" --region $region
+    aws autoscaling delete-auto-scaling-group   --auto-scaling-group-name "asg-$base_name" --force-delete --region $region
+    aws autoscaling delete-launch-configuration --launch-configuration-name "lc-$base_name"  --region $region
+    aws autoscaling delete-policy               --policy-name "sp-UP-$base_name" --auto-scaling-group "asg-$base_name" --region $region
+    aws autoscaling delete-policy               --policy-name "sp-DOWN-$base_name" --auto-scaling-group "asg-$base_name"  --region $region
+    aws cloudwatch delete-alarms                --alarm-names KaseHighCPUAlarm KaseLowCPUAlarm --region $region
+fi

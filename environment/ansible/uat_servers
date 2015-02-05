@@ -1,0 +1,128 @@
+[Admin_and_Registration_Tool]
+#ec2-54-234-158-244.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Admin_and_Registration_Tool_DB]
+#ec2-54-227-112-95.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Core_Standards]
+#ec2-54-197-16-21.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Core_Standards_DB_-_MySQL]
+#ec2-54-226-153-54.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[FTP_server]
+ec2-54-234-140-136.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Mail_server]
+ec2-54-160-136-171.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Monitoring_And_Alerting]
+#ec2-54-87-174-221.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-221-122-69.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Monitoring_And_Alerting_DB]
+#ec2-54-90-70-194.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-145-22-243.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Permissions]
+#ec2-54-87-164-167.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-237-142-236.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Permissions_DB_-_MySQL]
+#ec2-54-82-20-18.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-91-112-101.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+
+[Portal]
+ec2-54-163-214-252.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Proctor]
+#ec2-54-160-158-82.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-50-17-113-101.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-197-205-56.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-92-216-4.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Proctor_DB_-_MySQL]
+#ec2-54-163-204-204.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Program_Management]
+#ec2-54-221-179-165.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-91-73-20.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-221-188-5.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-242-55-96.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Program_Management_DB]
+#ec2-54-90-159-191.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+#ec2-54-227-226-252.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[SSO]
+#sso2.ci.opentestsystem.org ansible_ssh_private_key_file=/root/.ssh/sso2.ci.opentestsystem.org
+
+[Test_Authoring]
+#ec2-54-204-60-239.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Test_Authoring_DB]
+#ec2-54-197-152-223.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Test_Item_Bank]
+#ec2-23-22-251-18.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Test_Item_Bank_DB]
+#ec2-54-146-243-237.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Test_Spec_Bank]
+#ec2-54-87-32-247.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[Test_Spec_Bank_DB]
+#ec2-54-160-161-77.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[TR]
+#ec2-54-81-145-112.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+[TR_DB]
+#ec2-54-145-37-248.compute-1.amazonaws.com ansible_ssh_private_key_file=/root/.ssh/newairdev.pem
+
+
+[tomcat-servers:children]
+Admin_and_Registration_Tool
+Core_Standards
+Monitoring_And_Alerting
+Permissions
+Proctor
+Program_Management
+SSO
+Test_Authoring
+Test_Item_Bank
+Test_Spec_Bank
+TR
+
+[mysql-servers:children]
+Core_Standards_DB_-_MySQL
+Permissions_DB_-_MySQL
+Proctor_DB_-_MySQL
+
+[mongo-servers:children]
+Admin_and_Registration_Tool_DB
+Monitoring_And_Alerting_DB
+Program_Management_DB
+Test_Authoring_DB
+Test_Item_Bank_DB
+Test_Spec_Bank_DB
+TR_DB
+
+[mail-servers:children]
+Mail_server
+
+[ftp-servers:children]
+FTP_server
+
+[portal-servers:children]
+Portal
+
+[ci:children]
+tomcat-servers
+mysql-servers
+mongo-servers
+mail-servers
+ftp-servers
+Portal

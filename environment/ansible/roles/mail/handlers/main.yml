@@ -1,0 +1,3 @@
+---
+- name: sasl-passwd-db-regenerate
+  command: "postmap hash:/etc/postfix/sasl_passwd"

@@ -1,0 +1,46 @@
+,"This Server ->
+
+Talks to these servers below over the listed port(s)
+|
+V",Core Standards (CS),Monitoring And Alerting (MNA),Program Management (PM),Permissions (Perm),SSO - OpenAM,SSO - OpenDJ,Portal,Test Authoring (Auth),Test Spec Bank (TSB),Test Item Bank (TIB),Proctor (TDS),Admin and Registration Tool (ART),OpenAM Load Balancer,FTP server,Mail server,CS DB - MySQL (RDS),Auth DB - Mongo DB,ART DB - Mongo DB,MNA DB - Mongo DB,Perm DB - MySQL (RDS),PM DB - Mongo DB,TDS DB - MySQL (RDS),TIB DB - Mongo DB,TSB DB - Mongo DB,SSH,External
+Prefix,,cs,mna,pm,perm,oam,odj,portal,auth,tsb,tib,tds,art,oam-lb,sftp,mail,cs-db,auth-db,art-db,mna-db,perm-db,pm-db,tds-db,tib-db,tsb-db,ssh,ext
+cs,Core Standards (CS),,,,,,,,HTTPS-ALT,,,,,,,,,,,,,,,,,SSH,HTTPS
+mna,Monitoring And Alerting (MNA),HTTPS-ALT,,HTTPS-ALT,HTTPS-ALT,,,,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,,,,,,,,,,,,,SSH,HTTPS
+pm,Program Management (PM),HTTPS-ALT,HTTPS-ALT,,HTTPS-ALT,,,HTTPS,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,,,,,,,,,,,,,SSH,HTTPS
+perm,Permissions (Perm),,,,,,,HTTPS,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,HTTPS-ALT,,,,,,,,,,,,,SSH,HTTPS
+oam,SSO - OpenAM,,,,,,LDAP,,,,,,,HTTP/HTTP1,,,,,,,,,,,,SSH,HTTPS
+odj,SSO - OpenDJ,,,,,LDAP,,,,,,,SFTP,,,,,,,,,,,,,SSH,
+portal,Portal,,,,,HTTPS,,,,,,,,,,,,,,,,,,,,SSH,HTTPS
+auth,Test Authoring (Auth),,,,,,,,,,,,,,,,,,,,,,,,,SSH,HTTPS
+tsb,Test Spec Bank (TSB),,,,,,,,HTTPS,,,,,,,,,,,,,,,,,SSH,HTTPS
+tib,Test Item Bank (TIB),,,,,,,,HTTPS,,,,,,,,,,,,,,,,,SSH,HTTPS
+tds,Proctor (TDS),,,,,,,,,,,,,,,,,,,,,,,,,SSH,HTTPS
+art,Admin and Registration Tool (ART),,,,,,,,,,,HTTPS,,,,,,,,,,,,,,SSH,HTTPS
+oam-lb,OpenAM Load Balancer,HTTPS,HTTPS,HTTPS,HTTPS,,,HTTPS,HTTPS,HTTPS,HTTPS,HTTPS,HTTPS,,,,,,,,,,,,,,
+sftp,FTP server,,,,,,,,,SFTP,SFTP,,SFTP,,,,,,,,,,,,,SSH,SSH
+mail,Mail server,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,,SSMTP,,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP,SSMTP/SSH,SMTP
+cs-db,CS DB - MySQL (RDS),MYSQL,,,,,,,,,,,,,,,,,,,,,,,,SSH,
+auth-db,Auth DB - Mongo DB,,,,,,,,Mongo,,,,,,,,,,,,,,,,,SSH,
+art-db,ART DB - Mongo DB,,,,,,,,,,,,Mongo,,,,,,,,,,,,,SSH,
+mna-db,MNA DB - Mongo DB,,Mongo,,,,,,,,,,,,,,,,,,,,,,,SSH,
+perm-db,Perm DB - MySQL (RDS),,,,MYSQL,,,,,,,,,,,,,,,,,,,,,SSH,
+pm-db,PM DB - Mongo DB,,,Mongo,,,,,,,,,,,,,,,,,,,,,,SSH,
+tds-db,TDS DB - MySQL (RDS),,,,,,,,,,,MYSQL,,,,,,,,,,,,,,SSH,
+tib-db,TIB DB - Mongo DB,,,,,,,,,,Mongo,,,,,,,,,,,,,,,SSH,
+tsb-db,TSB DB - Mongo DB,,,,,,,,,Mongo,,,,,,,,,,,,,,,,SSH,
+ssh,SSH Server,,,,,,,,,,,,,,,,,,,,,,,,,,SSH
+ext,External,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Protocol,Port,,,,,,,,,,,,,,,,,,,,,,,,,,
+MYSQL,3306,,,,,,,,,,,,,,,,,,,,,,,,,,
+SSH,22,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mongo,27017,,,,,,,,,,,,,,,,,,,,,,,,,,
+SMTP,25,,,,,,,,,,,,,,,,,,,,,,,,,,
+SSMTP,10025,,,,,,,,,,,,,,,,,,,,,,,,,,
+HTTP,80,,,,,,,,,,,,,,,,,,,,,,,,,,
+HTTPS,443,,,,,,,,,,,,,,,,,,,,,,,,,,
+SFTP,22,,,,,,,,,,,,,,,,,,,,,,,,,,
+LDAP,1389,,,,,,,,,,,,,,,,,,,,,,,,,,
+HTTP-ALT,8080,,,,,,,,,,,,,,,,,,,,,,,,,,
+HTTPS-ALT,8443,,,,,,,,,,,,,,,,,,,,,,,,,,
+HTTP1,8081,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,6 @@
+#!/bin/bash
+for server in `/usr/local/bin/list_running_instances`
+do
+  echo $server
+  ssh -oStrictHostKeyChecking=no -i /root/air.pem $server "$*"
+done

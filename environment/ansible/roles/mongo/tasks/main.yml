@@ -1,0 +1,59 @@
+---
+# File: tasks.yml
+# Part: Mongodb
+#
+# Description:
+# - Install MongoDB from 10gen packages
+#
+# Parameters:
+#
+# Dependencies ([part:]type:filename):
+#
+# OS familly: Ubuntu >= 12.04
+
+- name: MongoDB | Fetch 10Gen signing key
+#  command: apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+  apt_key: id=7F0CEB10 keyserver=keyserver.ubuntu.com state=present
+
+- name: MongoDB | Add 10Gen repository
+  copy: src=10gen.list dest=/etc/apt/sources.list.d/10gen.list owner=root group=root mode=0644
+
+- name: MongoDB | Install latest MongoDB release 
+  apt: pkg=mongodb-10gen=2.4.9 state=present update_cache=yes force=yes
+  notify: mongodb-pin
+
+- name: MongoDB | Push default configuration template
+  copy: src=mongodb.conf dest=/etc/mongodb.conf owner=root group=root mode=0644
+  notify: mongodb-restart
+
+# Insure service is running.
+- name: MongoDB | Insure deamon is running correctly
+  service: name=mongodb state=started
+
+# Install Rockmongo
+- name: install Rockmongo packages
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - apache2
+    - php5
+    - libapache2-mod-php5
+    - php-pear
+    - php5-dev
+    - php5-cli
+    - libsasl2-dev
+
+- name: Rsync the directory structure
+  synchronize: src=rockmongo dest=/var/www/html/ rsync_path="sudo rsync"
+  notify: apache-restart
+
+- name:  Rockmongo | Push updated php5 ini file
+  copy: src=php.ini dest=/etc/php5/apache2/php.ini owner=root group=root mode=0644
+  notify: apache-restart
+
+- name: pecl install mongo
+  shell:  yes | pecl install -a mongo
+  register: pecl_result
+  changed_when: "'Build process completed successfully' in pecl_result.stdout"
+  failed_when: pecl_result.rc != 0 and ("is already installed" not in pecl_result.stdout)
+  notify: apache-restart
+#edit etc/php5/apache2/php.ini and add extension=mongo.sO

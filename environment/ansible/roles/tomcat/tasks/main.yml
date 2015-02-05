@@ -1,0 +1,49 @@
+---
+  - name: Rsync the directory structure
+    synchronize: src=tomcat dest=/usr/local rsync_path="sudo rsync"
+
+  - name: Add tomcat group
+    group: name=tomcat state=present
+
+  - name: Add tomcat user
+    user: name=tomcat group=tomcat home=/usr/local/tomcat shell=/bin/bash state=present
+
+  - name: Create ssh keys for tomcat
+    user: name=tomcat generate_ssh_key=yes
+
+  - name: install conf files
+    copy: src={{ item }} dest=/usr/local/tomcat/conf/{{ item }}
+    with_items:
+      - log4j.xml
+      - tomcat-users.xml
+
+  - name: Install server.xml
+    template: src=server.xml.j2 dest=/usr/local/tomcat/conf/server.xml
+
+  - name: install bin files
+    copy: src={{ item }} dest=/usr/local/tomcat/bin/{{ item }}
+    with_items:
+      - tomcat-juli-adapters.jar
+
+  - name: install lib files
+    copy: src={{ item }} dest=/usr/local/tomcat/lib/{{ item }}
+    with_items:
+      - mysql-connector-java-5.1.22-bin.jar
+
+  - name: install packages
+    apt: pkg=default-jre-headless state=latest
+
+  - name: Update iptables start file
+    copy: src=if-iptables-restore dest=/etc/network/if-pre-up.d/if-iptables-restore mode=0755
+    notify:
+      - restore iptables
+
+  - name: Update iptables file
+    copy: src=iptables.rules dest=/etc/iptables.rules
+    notify:
+      - restore iptables
+
+  - name: Install startup script
+    template: src=tomcat.init.d dest=/etc/init.d/tomcat mode=0755
+    notify:
+      - start tomcat service

@@ -1,0 +1,25 @@
+Text,FQDN,Role,Type,machine type,disk size (GB)
+ART,art-chris.opentestsystem.org,art,tomcat,c3.8xlarge,300
+Core Standards (CS),cs-chris.opentestsystem.org,cs,tomcat,m3.medium,80
+Monitoring And Alerting (MNA),mna-chris.opentestsystem.org,mna,tomcat,m3.medium,80
+Program Management (PM),pm-chris.opentestsystem.org,pm,tomcat,m3.medium,80
+Permissions (Perm),perm-chris.opentestsystem.org,perm,tomcat,m3.xlarge,120
+SSO - OpenAM,oam-chris.opentestsystem.org,oam,oam,m3.medium,8
+SSO - OpenDJ,oam-chris.opentestsystem.org,odj,odj,m3.medium,8
+Portal,portal-chris.opentestsystem.org,portal,tomcat,m1.small,20
+Test Authoring (Auth),auth-chris.opentestsystem.org,auth,tomcat,m3.medium,80
+Test Spec Bank (TSB),tsb-chris.opentestsystem.org,tsb,tomcat,m3.medium,80
+Test Item Bank (TIB),tib-chris.opentestsystem.org,tib,tomcat,m3.medium,80
+Proctor (TDS),tds-chris.opentestsystem.org,tds,tomcat,c3.8xlarge,80
+CS DB - MySQL (RDS),cs-db-chris.opentestsystem.org,cs-db,mysql,m3.medium,80
+Auth DB - Mongo DB,auth-db-chris.opentestsystem.org,auth-db,mongo,m3.medium,80
+ART DB - Mongo DB,art-db-chris.opentestsystem.org,art-db,mongo,c3.8xlarge,300
+MNA DB - Mongo DB,mna-db-chris.opentestsystem.org,mna-db,mongo,m3.medium,80
+Perm DB - MySQL (RDS),perm-db-chris.opentestsystem.org,perm-db,mysql,m3.medium,80
+PM DB - Mongo DB,pm-db-chris.opentestsystem.org,pm-db,mongo,m3.medium,80
+TDS DB - MySQL (RDS),tds-db-chris.opentestsystem.org,tds-db,mysql,m3.medium,80
+TIB DB - Mongo DB,tib-db-chris.opentestsystem.org,tib-db,mongo,m3.medium,80
+TSB DB - Mongo DB,tsb-db-chris.opentestsystem.org,tsb-db,mongo,m3.medium,80
+SSH Server,ssh-chris.opentestsystem.org,ssh,ssh,m3.medium,20
+FTP server,sftp-chris.opentestsystem.org,sftp,ftp,m1.small,80
+Mail server,mail-chris.opentestsystem.org,mail,mail,m3.medium,8

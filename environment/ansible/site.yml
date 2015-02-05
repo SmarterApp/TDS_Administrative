@@ -1,0 +1,14 @@
+---
+#  vars_files:
+#    - /etc/ansible/external_vars.yml
+- include: Core_Standards_servers.yml
+- include: oam_servers.yml
+- include: odj_servers.yml
+- include: mail_servers.yml
+- include: mongo_servers.yml
+- include: mysql_servers.yml
+- include: sftp_servers.yml
+- include: ssh_servers.yml
+- include: tomcat_servers.yml
+#- hosts: all
+  sudo: True

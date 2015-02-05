@@ -1,0 +1,10 @@
+---
+# file: roles/tomcat/handlers/main.yml
+- name: restart iptables
+  service: name=ufw state=restarted
+
+- name: restore iptables
+  command: /etc/network/if-pre-up.d/if-iptables-restore
+
+- name: start tomcat service
+  command: /etc/init.d/tomcat restart

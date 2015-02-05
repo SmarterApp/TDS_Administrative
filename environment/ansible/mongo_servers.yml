@@ -1,0 +1,9 @@
+---
+- hosts: tag_Type_mongo 
+  vars_files:
+  - /etc/ansible/external_vars.yml
+
+  roles:
+    - common
+    - ssmtp
+    - mongo

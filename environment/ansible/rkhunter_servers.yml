@@ -1,0 +1,8 @@
+---
+- hosts: rkhunter-servers
+  vars_files:
+  - /etc/ansible/external_vars.yml
+
+  roles:
+    - common
+    - rkhunter

@@ -1,0 +1,23 @@
+---
+- name: install packages
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - postfix
+    - dovecot-imapd
+    - dovecot-pop3d
+
+- name: install conf files
+  copy: src={{ item }} dest=/etc/postfix/{{ item }}
+  with_items:
+    - client_checks.db
+    - master.cf
+
+- name: Update sasl_passwd file
+  template: src=sasl_passwd.j2 dest=/etc/postfix/sasl_passwd owner=root group=root mode=0600
+  notify: sasl-passwd-db-regenerate
+
+- name: Update main.cf conf file
+  template: src=client_checks.j2 dest=/etc/postfix/client_checks
+
+- name: Update main.cf conf file
+  template: src=main.cf.j2 dest=/etc/postfix/main.cf

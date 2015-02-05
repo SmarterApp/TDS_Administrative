@@ -1,0 +1,4 @@
+---
+  - name: Apt debconf selections
+    action: command debconf-set-selections /root/.apt-debconf-mysql.conf
+

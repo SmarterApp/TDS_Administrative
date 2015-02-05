@@ -1,0 +1,9 @@
+---
+- hosts: tag_Role_ssh
+  vars_files:
+  - /etc/ansible/external_vars.yml
+
+  roles:
+    - common
+    - ssmtp
+    - ssh

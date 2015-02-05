@@ -1,0 +1,81 @@
+---
+      - name: update root authorized keys
+        replace: dest=/root/.ssh/authorized_keys regexp='^.* 10\" ' replace='' backup=yes
+
+      - name: Remove apparmor
+        apt: name=apparmor state=absent
+
+      - name: update cache
+        apt: update_cache=yes cache_valid_time=3600   
+
+      - name: upgrade the distro
+        apt: upgrade=yes
+
+      - name: install packages
+        apt: pkg={{ item }} state=latest
+        with_items:
+          - fail2ban
+          - python-pip
+          - emacs
+          - pssh
+          - unattended-upgrades
+          - mercurial
+          - ntp
+
+      - name: nagios user
+        user: name=nagios shell=/bin/bash home=/usr/local/nagios
+
+      - name: Install boto via PIP
+        pip: name=boto state=latest
+
+      - name: Install AWS CLI via PIP
+        pip: name=awscli state=latest
+
+      - name: Install AWS EB CLI via PIP
+        pip: name=awsebcli state=latest
+
+      - name: Rsync the directory structure
+        synchronize: src=administrative/aws/root/ dest=/ rsync_path="sudo rsync" rsync_opts=--checksum
+
+      - name: ensure nagios is running
+        service: name=nrpe state=started enabled=yes
+
+      - name: Make sure ssmtp directory exists
+        file: path=/etc/ssmtp state=directory
+
+      - name: Update SSMTP conf file
+        template: src=ssmtp.conf.j2 dest=/etc/ssmtp/ssmtp.conf
+
+      - name: Update Nagios conf file
+        template: src=nrpe.cfg.j2 dest=/usr/local/nagios/etc/nrpe.cfg
+
+      - name: Update dump_component_mapping.pl file
+        template: src=dump_component_mapping.pl.j2  dest=/usr/local/bin/dump_component_mapping.pl
+
+      - name: Update dump_component_mapping.sh file
+        template: src=dump_component_mapping.sh.j2  dest=/usr/local/bin/dump_component_mapping.sh
+
+      - name: Update restart_tomcat_servers.sh file
+        template: src=restart_tomcat_servers.sh.j2  dest=/usr/local/bin/restart_tomcat_servers.sh
+
+      - name: Update update_route53_cname.sh file
+        template: src=update_route53_cname.sh.j2  dest=/usr/local/bin/update_route53_cname.sh
+
+      - name: Update pnp4n_send_host_mail.pl file
+        template: src=pnp4n_send_host_mail.pl.j2  dest=/usr/local/nagios/bin/pnp4n_send_host_mail.pl
+
+      - name: Update pnp4n_send_service_mail.pl file
+        template: src=pnp4n_send_service_mail.pl.j2  dest=/usr/local/nagios/bin/pnp4n_send_service_mail.pl
+
+      - name: Update nagios.cfg file
+        template: src=nagios.cfg.j2  dest=/usr/local/nagios/etc/nagios.cfg
+
+      - name: Update notifications.cfg file
+        template: src=notifications.cfg.j2  dest=/usr/local/nagios/etc/notifications.cfg
+
+      - name: Update contacts.cfg file
+        template: src=contacts.cfg.j2 dest=/usr/local/nagios/etc/objects/contacts.cfg
+
+      - name: Update sysctl.conf file
+        copy: src=sysctl.conf dest=/etc/sysctl.conf owner=root group=root mode=0644
+        notify: sysctl-restart

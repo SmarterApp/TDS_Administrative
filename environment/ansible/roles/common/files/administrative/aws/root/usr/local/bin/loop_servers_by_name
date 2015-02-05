@@ -1,0 +1,6 @@
+#!/bin/bash
+for server in `/usr/local/bin/dump_ec2_tags.sh Name`
+do
+  echo $server
+  ssh -oStrictHostKeyChecking=no -i /root/air.pem $server "$*"
+done

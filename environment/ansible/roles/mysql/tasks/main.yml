@@ -1,0 +1,41 @@
+---
+# MySQL modules
+- name: Apt debconf create
+  template: src=apt-debconf-mysql.conf.j2 dest=/root/.apt-debconf-mysql.conf owner=root mode=400
+#  copy: src=apt-debconf-mysql.conf dest=/root/.apt-debconf-mysql.conf owner=root mode=400
+  notify: Apt debconf selections
+ 
+# answer are written into /var/cache/debconf/templates.dat on Ubuntu 12.04
+# the file can be deleted !
+ 
+- name: Install MySQL
+  apt: name={{ item }} state=present
+  with_items:
+    - php5-mysql
+    - mysql-server-5.6
+    - python-mysqldb
+    - libapache2-mod-auth-mysql
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+
+- name: Creates mysql tmp directory
+  file: path=/var/tmp/mysql state=directory owner=mysql group=mysql mode=0700
+
+- name: copy root configurations file
+  template:
+    src=my.cnf
+    dest=/etc/mysql/my.cnf
+    owner=root group=root mode=0644
+
+- name: Start mysql service
+  service: name=mysql state=started enabled=true
+
+#- name: configuring root user pass and priveliges
+#  mysql_user: name=root host={{ item }} password={{ mysql_password }} priv=*.*:ALL,GRANT
+#  with_items:
+#  - "{{ inventory_hostname }}"
+#  - 127.0.0.1
+#  - ::1
+#  - localhost
+#  - "%"
+

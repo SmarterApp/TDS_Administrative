@@ -1,0 +1,15 @@
+---
+- name: mongodb-start
+  service: name=mongodb state=started
+
+- name: mongodb-restart
+  service: name=mongodb state=restarted
+
+- name: mongodb-reload
+  service: name=mongodb state=reloaded
+
+- name: mongodb-pin
+  command: "apt-mark hold mongodb-10gen"
+
+- name: apache-restart
+  service: name=apache2 state=restarted

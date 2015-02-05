@@ -1,0 +1,8 @@
+---
+- hosts: tag_Type_tomcat
+  vars_files:
+  - /etc/ansible/external_vars.yml
+
+  roles:
+    - common
+    - tomcat

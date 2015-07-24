@@ -2,18 +2,24 @@
 #=================================================================================
 #=================================================================================
 #
-# load_reg_package.pl
+# Educational Online Test Delivery System
+# Copyright (c) 2015 American Institutes for Research
+# 
+# Distributed under the AIR Open Source License, Version 1.0
+# See accompanying file AIR-License-1_0.txt or at
+# http://www.smarterapp.org/documents/American_Institutes_for_Research_Open_Source_Software_License.pdf
+# 
+# Script: load_reg_package.pl
 # Author: David Lopez de Quintana
-# Last modified: 31 Oct 2014
 #
-# This script will load one or more test packages into a Test Spec Bank so that
-# registration packages can be loaded into ART.
+# The purpose of this script is to load one or more registration test packages
+# into a Test Spec Bank Bank (TSB). Once loaded into a TSB, the test packages
+# can be selected into an instance of ART for student registration.
 #
 #=================================================================================
 #=================================================================================
 #=================================================================================
 
-XML::LibXML;
 use Getopt::Long;
 use File::Find;
 use Compress::Zlib;
@@ -94,7 +100,7 @@ AIR Registration Publication Uploader Script
 
 The purpose of this script is to load a registration test package or set of packages
 into a Test Spec Bank Bank. Once loaded into a Test Spec Bank, the test packages
-can be selected into an instance of ART for studenet registration. This script performs
+can be selected into an instance of ART for student registration. This script performs
 the following steps:
 
 1. Obtains a filename of a test package a directory containing test packages from the
@@ -109,7 +115,7 @@ the following steps:
    b. Compresses and base 64 encodes the test package
    c. Inserts the test package into the Test Spec Bank
 
-Usage is load_reg_package.pl 
+Usage: load_reg_package.pl 
     --path=<test package file name or directory with test packages in it> 
 	--exec\n
 
@@ -124,10 +130,10 @@ are as follows:
 
 Debug: set to 1 for full verbose information written to standard output
 OpenAmUri: the base URI of OpenAM to obtain OAuth tokens
-OpenAmClientSecret: a string that matches the OPenAM configuration for the OAuth client
+OpenAmClientSecret: a string that matches the OpenAM configuration for the OAuth client
 ProgramMgmtUri: the base URI of the Program Management component for the tenant ID
 ProgramMgmtTenant: Tests loaded into Test Spec Bank will be under this tenant
-ProgramMgmtTenantLevel: the level of the above tenant (sually STATE)
+ProgramMgmtTenantLevel: the level of the above tenant (usually STATE)
 ProgManUserId: the ID of a user with an Administrator role associated with CLIENT
 ProgManPassword: the password of the above user
 TestSpecBankUri: the URI of the Test Spec Bank used to load tests
@@ -486,6 +492,8 @@ sub ProcessXmlFile
 		my $TestSpecBankUrl = "$Configuration{ 'TestSpecBankUri' }/rest/testSpecification";
 		my $TestSpecBankParams = "Authorization: Bearer $TestSpecBankAccessToken";
 		my $InsertTestUrl = "curl -s --insecure -3 -X POST --data $UriEncodedJsonTestBody $TestSpecBankUrl --header \"$TestSpecBankParams\" --header \"Accept: application/json\" --header \"Content-Type: application/json\"";
+		# possibly the line below could work better if the one above has problems (difference being the -s and -3 options)
+		# my $InsertTestUrl = "curl --insecure -X POST --data $UriEncodedJsonTestBody $TestSpecBankUrl --header \"$TestSpecBankParams\" --header \"Accept: application/json\" --header \"Content-Type: application/json\"";
 		print( "\n" ) if $Debug;
 		print( "TestSpecBankUrl = \"$TestSpecBankUrl\"\n" ) if $Debug;
 		print( "TestSpecBankParams = \"$TestSpecBankParams\"\n" ) if $Debug;

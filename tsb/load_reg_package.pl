@@ -85,11 +85,13 @@ print( "\n" ) if $Debug;
 # get the command line options
 my $FilePathParam;
 my $ExecuteParam;
+my $ItemBankParam;
 GetOptions( 
 	"path=s" => \$FilePathParam,
+        "itembank=s" => \$ItemBankParam,
 	"exec"   => \$ExecuteParam,
 )
-or die("Usage is load_reg_package.pl --path=<test package file name or directory with test packages in it>\n");
+or die("Usage is load_reg_package.pl --path=<test package file name or directory with test packages in it> --itembank=<item bank identifier> --exec (to execute)\n");
 
 # print some help text if no parameter is provided
 if( $FilePathParam eq "" )
@@ -117,7 +119,8 @@ the following steps:
 
 Usage: load_reg_package.pl 
     --path=<test package file name or directory with test packages in it> 
-	--exec\n
+    --itembank=<item bank identifier>
+    --exec\n
 
 Use --exec to actually load the test into the test spec bank. If --exec is not used, 
 all steps will be performed except actually inserting tests into the Test Spec Bank.
@@ -463,15 +466,16 @@ sub ProcessXmlFile
 		# build the test spec bank parameters and convert to JSON
 		
 		my %Data;
-		$Data{ 'specificationXml'    } = $EncodedTestPackage;		
-		$Data{ 'tenantId'            } = $TenantId;		
+		$Data{ 'specificationXml'    } = $EncodedTestPackage;
+		$Data{ 'tenantId'            } = $TenantId;
+		$Data{ 'itemBank'            } = $ItemBankParam;
 		$Data{ 'category'            } = "";
-		$Data{ 'subjectName'         } = $TestSubjectName;		
-		$Data{ 'subjectAbbreviation' } = $TestSubjectAbbreviation;	
-		$Data{ 'name'                } = $UniqueId;	
-		$Data{ 'grade'               } = \@TestGrades;		
+		$Data{ 'subjectName'         } = $TestSubjectName;
+		$Data{ 'subjectAbbreviation' } = $TestSubjectAbbreviation;
+		$Data{ 'name'                } = $UniqueId;
+		$Data{ 'grade'               } = \@TestGrades;
 		$Data{ 'label'               } = $TestLabel;
-		$Data{ 'purpose'             } = "REGISTRATION";	
+		$Data{ 'purpose'             } = "REGISTRATION";
 		$Data{ 'type'                } = $TestType;
 		$Data{ 'version'             } = $TestVersion;
 		print( "Hash data structure for construction of JSON for call to Test Spec Bank:\n" ) if $Debug;

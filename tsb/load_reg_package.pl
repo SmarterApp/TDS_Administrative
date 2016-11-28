@@ -34,7 +34,8 @@ use strict;
 
 my $TRUE = 1;
 my $FALSE = 0;
-
+my $AllowNoTestType = $FALSE; # some P&T packages have no test types. Setting this
+                              # to TRUE will allow this script to proceed.
 #=================================================================================
 # obtain configuration from config file
 
@@ -43,7 +44,7 @@ my %Configuration;
 $Configuration{ 'Debug'                  } = -1;
 $Configuration{ 'OpenAmUri'              } = -1;
 $Configuration{ 'OpenAmClientSecret'     } = -1;
-$Configuration{ 'ProgramMgmtUri'         } = -1;
+$Configuration{ 'ProgramMgmtRestUri'     } = -1;
 $Configuration{ 'ProgramMgmtTenant'      } = -1;
 $Configuration{ 'ProgramMgmtTenantLevel' } = -1;
 $Configuration{ 'ProgManUserId'          } = -1;
@@ -134,7 +135,7 @@ are as follows:
 Debug: set to 1 for full verbose information written to standard output
 OpenAmUri: the base URI of OpenAM to obtain OAuth tokens
 OpenAmClientSecret: a string that matches the OpenAM configuration for the OAuth client
-ProgramMgmtUri: the base URI of the Program Management component for the tenant ID
+ProgramMgmtRestUri: the base URI of the Program Management component REST endpoint for the tenant ID
 ProgramMgmtTenant: Tests loaded into Test Spec Bank will be under this tenant
 ProgramMgmtTenantLevel: the level of the above tenant (usually STATE)
 ProgManUserId: the ID of a user with an Administrator role associated with CLIENT
@@ -190,9 +191,10 @@ print( "ProgManAccessToken = \"$ProgManAccessToken\"\n" ) if $Debug;
 print( "Getting tenant ID from Program Management\n" );
 
 # build the Program Management URL
-my $ProgramMgmtUrl = "$Configuration{ 'ProgramMgmtUri' }/rest/tenant?name=$Configuration{ 'ProgramMgmtTenant' }&type=$Configuration{ 'ProgramMgmtTenantLevel' }";
+my $ProgramMgmtUrl = "$Configuration{ 'ProgramMgmtRestUri' }/tenant?name=$Configuration{ 'ProgramMgmtTenant' }&type=$Configuration{ 'ProgramMgmtTenantLevel' }";
 my $ProgramMgmtParams = "Authorization: Bearer $ProgManAccessToken";
-my $TenantIdUrl = "curl -s -G --insecure -3 --header \"$ProgramMgmtParams\" $ProgramMgmtUrl";
+my $TenantIdUrl = "curl -s -G --insecure --header \"$ProgramMgmtParams\" $ProgramMgmtUrl";
+# If using SSLv3, add a -3 option to the above line.
 
 print( "ProgramMgmtUrl = \"$ProgramMgmtUrl\"\n") if $Debug;
 print( "ProgramMgmtParams = \"$ProgramMgmtParams\"\n" ) if $Debug;
@@ -412,15 +414,20 @@ sub ProcessXmlFile
 			
 			if( /<registration>/ && $State == 2 )
 			{
-				die( "Test Type not found.\n" ) if !$TestTypeFound;
+			    # if we didn't find a test type in the registration package, and we consider
+			    # this scenario invalid, then exit.
+			    if (!$TestTypeFound && !$AllowNoTestType) 
+			    {
+				die( "Test Type not found in this registration package. Set AllowNoTestType to true to bypass this check.\n" )
+			    }
 
-				$_ = "  <property name=\"label\" value=\"$TestLabel\" label=\"$TestLabel\"/>
+			    $_ = "  <property name=\"label\" value=\"$TestLabel\" label=\"$TestLabel\"/>
   <property name=\"category\"/>
   <property name=\"comment\"/>
   <property name=\"description\"/>
   <property name=\"testfamily\"/>
   <registration>\n";
-				$State = 3;
+			    $State = 3;
 			}
 			
 			if( /<poolproperty/ && $State == 3 )
@@ -495,9 +502,9 @@ sub ProcessXmlFile
 		
 		my $TestSpecBankUrl = "$Configuration{ 'TestSpecBankUri' }/rest/testSpecification";
 		my $TestSpecBankParams = "Authorization: Bearer $TestSpecBankAccessToken";
-		my $InsertTestUrl = "curl -s --insecure -3 -X POST --data $UriEncodedJsonTestBody $TestSpecBankUrl --header \"$TestSpecBankParams\" --header \"Accept: application/json\" --header \"Content-Type: application/json\"";
-		# possibly the line below could work better if the one above has problems (difference being the -s and -3 options)
-		# my $InsertTestUrl = "curl --insecure -X POST --data $UriEncodedJsonTestBody $TestSpecBankUrl --header \"$TestSpecBankParams\" --header \"Accept: application/json\" --header \"Content-Type: application/json\"";
+		my $InsertTestUrl = "curl -s --insecure -X POST --data $UriEncodedJsonTestBody $TestSpecBankUrl --header \"$TestSpecBankParams\" --header \"Accept: application/json\" --header \"Content-Type: application/json\"";
+		# If using SSLv3, add a -3 option to the above line.
+		# for example: my $InsertTestUrl = "curl --insecure -3 -X POST --data $UriEncodedJsonTestBody $TestSpecBankUrl --header \"$TestSpecBankParams\" --header \"Accept: application/json\" --header \"Content-Type: application/json\"";
 		print( "\n" ) if $Debug;
 		print( "TestSpecBankUrl = \"$TestSpecBankUrl\"\n" ) if $Debug;
 		print( "TestSpecBankParams = \"$TestSpecBankParams\"\n" ) if $Debug;

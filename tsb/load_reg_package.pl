@@ -398,13 +398,19 @@ sub ProcessXmlFile
 						$TestType = "I";
 						$TestTypeFound = $TRUE;
 					}
-					else
-					{
-						if( $PropValue eq "summative" )
+					else {
+					    if( $PropValue eq "summative" )
+					    {
+						$TestType = "S";
+						$TestTypeFound = $TRUE;
+					    } 
+					    else {
+						if ( $PropValue eq "formative" )
 						{
-							$TestType = "S";
-							$TestTypeFound = $TRUE;
+						    $TestType = "F";
+						    $TestTypeFound = $TRUE;
 						}
+					    }
 					}
 				}
 			}

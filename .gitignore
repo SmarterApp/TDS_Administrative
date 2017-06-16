@@ -11,6 +11,11 @@
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
+/tsb/TSB_Loader/.idea/workspace.xml
+/tsb/TSB_Loader/.idea/tasks.xml
+/tsb/TSB_Loader/.idea/dictionaries
+/tsb/TSB_Loader/.idea/vcs.xml
+/tsb/TSB_Loader/.idea/jsLibraryMappings.xml
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -19,33 +24,51 @@
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
+/tsb/TSB_Loader/.idea/dataSources.ids
+/tsb/TSB_Loader/.idea/dataSources.xml
+/tsb/TSB_Loader/.idea/dataSources.local.xml
+/tsb/TSB_Loader/.idea/sqlDataSources.xml
+/tsb/TSB_Loader/.idea/dynamic.xml
+/tsb/TSB_Loader/.idea/uiDesigner.xml
+/tsb/TSB_Loader/.idea/
 
 # Gradle:
-.idea/gradle.xml
-.idea/libraries
+/tsb/TSB_Loader/.idea/gradle.xml
+/tsb/TSB_Loader/.idea/libraries
+/tsb/TSB_Loader/.idea/gradle.xml
+/tsb/TSB_Loader/.idea/libraries
 
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
+/tsb/TSB_Loader/.idea/mongoSettings.xml
 
 ## File-based project format:
 *.iws
+/tsb/TSB_Loader/*.iws
 
 ## Plugin-specific files:
 
 # IntelliJ
 /out/
+/tsb/TSB_Loader/out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+/tsb/TSB_Loader/.idea_modules/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
+/tsb/TSB_Loader/atlassian-ide-plugin.xml
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+/tsb/TSB_Loader/com_crashlytics_export_strings.xml
+/tsb/TSB_Loader/crashlytics.properties
+/tsb/TSB_Loader/crashlytics-build.properties
+/tsb/TSB_Loader/fabric.properties
 
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
@@ -64,6 +87,15 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+/tsb/TSB_Loader/target/
+/tsb/TSB_Loader/pom.xml.tag
+/tsb/TSB_Loader/pom.xml.releaseBackup
+/tsb/TSB_Loader/pom.xml.versionsBackup
+/tsb/TSB_Loader/pom.xml.next
+/tsb/TSB_Loader/release.properties
+/tsb/TSB_Loader/dependency-reduced-pom.xml
+/tsb/TSB_Loader/buildNumber.properties
+/tsb/TSB_Loader/.mvn/timing.properties
 
 
 ### Eclipse ###
@@ -122,6 +154,7 @@ local.properties
 
 ### Java ###
 *.class
+/tsb/TSB_Loader/*.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -130,6 +163,9 @@ local.properties
 *.jar
 *.war
 *.ear
+/tsb/TSB_Loader/*.jar
+/tsb/TSB_Loader/*.war
+/tsb/TSB_Loader/*.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

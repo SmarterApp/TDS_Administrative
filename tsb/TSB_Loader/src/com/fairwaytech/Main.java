@@ -59,13 +59,20 @@ public class Main {
             errorOut();
         }
         registration.stream().forEach(x -> {
-            x.setSpecificationXml("");
             System.out.println(JsonUtilities.toJson(x));
         }
         );
         if(arguments.get().hasOption("x") && registration.stream()
                 .allMatch(x -> HttpUtilities.pushRegistrationToTestSpecBank(configuration.get(), x, testSpecBankOpenAMToken))) {
             System.out.println("Registration completed successfully");
+            try {
+                System.in.read();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            System.exit(0);
+        } else if(!arguments.get().hasOption("x")) {
+            System.out.println("Registration assembly successful. Registration not executed (no -x argument provided)");
             try {
                 System.in.read();
             } catch (IOException e) {

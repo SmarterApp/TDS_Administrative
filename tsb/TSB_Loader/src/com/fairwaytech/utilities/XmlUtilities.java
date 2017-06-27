@@ -74,7 +74,7 @@ public class XmlUtilities {
                 grades[i] = nodeList.item(i).getNodeValue();
             }
             result.setGrade(grades);
-            result.setSpecificationXml(Base64.getEncoder().encodeToString(Files.readAllBytes(file.toPath())));
+            result.setSpecificationXml("");
         } catch(Exception ex) {
             ex.printStackTrace();
             return null;

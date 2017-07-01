@@ -146,7 +146,7 @@ public class HttpUtilities {
 
         String query;
         try {
-            query = URLEncoder.encode(JsonUtilities.toJson(registration), CHARSET);
+            query = JsonUtilities.toJson(registration);
 
             OutputStream output = connection.getOutputStream();
             output.write(query.getBytes(StandardCharsets.UTF_8.name()));

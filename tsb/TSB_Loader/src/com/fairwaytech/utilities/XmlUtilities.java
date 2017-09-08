@@ -15,6 +15,7 @@ import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.Base64;
+import java.util.zip.Deflater;
 
 /**
  * Created by gregwhite on 6/15/17.
@@ -74,7 +75,17 @@ public class XmlUtilities {
                 grades[i] = nodeList.item(i).getNodeValue();
             }
             result.setGrade(grades);
-            result.setSpecificationXml("");
+
+            // Compress xml
+            byte[] output = new byte[1024];
+            Deflater compresser = new Deflater();
+            compresser.setInput(Files.readAllBytes(file.toPath()));
+            compresser.finish();
+            compresser.deflate(output);
+            compresser.end();
+
+            result.setSpecificationXml(Base64.getEncoder().encodeToString(output));
+
         } catch(Exception ex) {
             ex.printStackTrace();
             return null;

@@ -77,7 +77,8 @@ public class XmlUtilities {
             result.setGrade(grades);
 
             // Compress xml
-            byte[] output = new byte[1024];
+            byte[] output = new byte[4096];
+            replaceTestNameWithUniqueId(file);
             Deflater compresser = new Deflater();
             compresser.setInput(Files.readAllBytes(file.toPath()));
             compresser.finish();
@@ -92,6 +93,9 @@ public class XmlUtilities {
         }
 
         return result;
+    }
+
+    private static void replaceTestNameWithUniqueId(final File file) {
     }
 
     private static Document retrieveXmlFromFile(File file) {

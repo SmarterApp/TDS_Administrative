@@ -4,8 +4,11 @@ import com.fairwaytech.models.Configuration;
 import com.fairwaytech.models.Project;
 import com.fairwaytech.models.TestSpecBankRegistration;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.oracle.tools.packager.IOUtils;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
@@ -15,6 +18,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Created by gregwhite on 6/14/17.
@@ -58,6 +62,8 @@ public class HttpUtilities {
             OutputStream output = connection.getOutputStream();
             output.write(query.getBytes(StandardCharsets.UTF_8.name()));
             InputStream response = connection.getInputStream();
+//            String responseStr = new BufferedReader(new InputStreamReader(response))
+//                .lines().collect(Collectors.joining("\n"));
             ObjectMapper mapper = new ObjectMapper();
             jsonMap = mapper.readValue(response, Map.class);
         } catch(Exception ex) {
@@ -141,13 +147,14 @@ public class HttpUtilities {
         }
         connection.setDoOutput(true); // Triggers POST.
         connection.setRequestProperty("Accept-Charset", CHARSET);
+        connection.setRequestProperty("Accept", "application/json");
         connection.setRequestProperty("Content-Type", "application/json");
         connection.setRequestProperty("Authorization", "Bearer " + testSpecBankToken);
+
 
         String query;
         try {
             query = JsonUtilities.toJson(registration);
-
             OutputStream output = connection.getOutputStream();
             output.write(query.getBytes(StandardCharsets.UTF_8.name()));
             InputStream response = connection.getInputStream();

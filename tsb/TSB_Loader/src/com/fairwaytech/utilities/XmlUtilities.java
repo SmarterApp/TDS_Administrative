@@ -82,11 +82,11 @@ public class XmlUtilities {
             // Compress xml
             byte[] output = new byte[4096];
             replaceTestNameWithUniqueId(file);
-            Deflater compresser = new Deflater();
-            compresser.setInput(Files.readAllBytes(file.toPath()));
-            compresser.finish();
-            compresser.deflate(output);
-            compresser.end();
+            Deflater compressor = new Deflater();
+            compressor.setInput(Files.readAllBytes(file.toPath()));
+            compressor.finish();
+            compressor.deflate(output);
+            compressor.end();
 
             result.setSpecificationXml(Base64.getEncoder().encodeToString(output));
 

@@ -7,6 +7,10 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
@@ -99,11 +103,20 @@ public class XmlUtilities {
         return result;
     }
 
-    public static byte[] documentToByte(Document document)
+    private static byte[] documentToByte(Document document)
     {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        XMLUtils.outputDOM(document, byteArrayOutputStream, true);
-        return byteArrayOutputStream.toByteArray();
+        try {
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            StreamResult result = new StreamResult(byteArrayOutputStream);
+            transformer.transform(new DOMSource(document), result);
+            return byteArrayOutputStream.toByteArray();
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
 
     private static Document retrieveXmlFromFile(File file) {

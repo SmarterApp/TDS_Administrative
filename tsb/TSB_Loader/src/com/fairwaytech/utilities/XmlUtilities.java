@@ -1,6 +1,7 @@
 package com.fairwaytech.utilities;
 
 import com.fairwaytech.models.TestSpecBankRegistration;
+import com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
@@ -11,6 +12,7 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -81,9 +83,8 @@ public class XmlUtilities {
 
             // Compress xml
             byte[] output = new byte[4096];
-            replaceTestNameWithUniqueId(file);
             Deflater compressor = new Deflater();
-            compressor.setInput(Files.readAllBytes(file.toPath()));
+            compressor.setInput(documentToByte(document));
             compressor.finish();
             compressor.deflate(output);
             compressor.end();
@@ -98,7 +99,11 @@ public class XmlUtilities {
         return result;
     }
 
-    private static void replaceTestNameWithUniqueId(final File file) {
+    public static byte[] documentToByte(Document document)
+    {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        XMLUtils.outputDOM(document, byteArrayOutputStream, true);
+        return byteArrayOutputStream.toByteArray();
     }
 
     private static Document retrieveXmlFromFile(File file) {

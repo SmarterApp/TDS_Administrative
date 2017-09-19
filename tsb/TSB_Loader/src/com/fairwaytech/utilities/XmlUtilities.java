@@ -76,6 +76,9 @@ public class XmlUtilities {
             }
             result.setGrade(grades);
 
+            NodeList nameList = (NodeList) xPath.compile("./testspecification/identifier/@name").evaluate(document, XPathConstants.NODESET);
+            nameList.item(0).setNodeValue(result.getName());
+
             // Compress xml
             byte[] output = new byte[4096];
             replaceTestNameWithUniqueId(file);
